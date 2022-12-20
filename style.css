@@ -1,0 +1,487 @@
+/* ALL */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+  font-family: myFonts;
+  /* background: linear-gradient(0.45turn,rgba(244, 85, 85, 0.7),rgba(255, 255, 146, 0.7)); */
+  background-color: #989898;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  
+}
+
+
+@font-face {
+    font-family: myFonts;
+    src: url(Fonts/tommy.otf);
+}
+
+
+/* //////////////////// NAV ////////////////////// */
+
+.navbar{
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    line-height: 47px;
+    background-color: rgb(235, 235, 235);
+    padding:1em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.navbar a{
+    color: rgb(0, 0, 0);
+} 
+
+.navbar a:hover{
+    color: rgb(255, 204, 0);
+}   
+
+.navbar .blason{
+    width: 3em;
+    align-items: left;
+    display: flex;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    padding-left:75px;
+}
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+    display: flex;
+}
+
+.navbar .nav-links ul li.active a{
+    color: red;
+    font-weight: 600;
+}
+
+.menu-hamburger{
+  width: 50px;
+  position: absolute;
+  right: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+/* ANIM NAV */
+
+/*nav{
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-delay: 0ms;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+*/
+
+
+@media screen and (max-width:800px){
+  .navbar a:hover{
+    color: rgb(155, 0, 0);
+    font-size: 105%;
+  }
+  .navbar{
+    padding: 10px;
+  }
+  .navbar .blason{
+    width: 10vw;
+  }
+  .navbar .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%; 
+    
+  }
+
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+
+  .navbar .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width:120Vh;
+  }
+  .navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  .navbar .menu-hamburger{
+    position: absolute;
+    right:10px;
+    display: block;
+    width: 13vw;
+  }
+}
+
+
+/*////////////////////// ACCUEIL //////////////////////////////////////////////*/
+
+
+#text-accueil{
+  font-size: 6vw;
+  width:100vw;
+  padding: 2em;
+
+}
+
+#text-accueil-mobile{
+  display:none;
+  font-size: 10vw;
+  position: absolute;
+  top:200px;
+  left:15vw;
+  background: -webkit-linear-gradient(0.4turn, rgb(253, 0, 0), rgb(255, 208, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+header{
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    width:100%;
+ }
+
+
+#text-accueil p :nth-child(1){
+  color:black;
+  animation: slidein2 1s none 0ms;
+}
+
+#text-accueil p :nth-child(2){
+  color:rgb(255, 0, 0);
+  animation: slidein2 1.2s none 0ms;
+
+}
+
+#text-accueil p :nth-child(3){
+  color:rgb(255, 221, 0);
+  animation: slidein2 1.4s none 0ms;
+
+}
+
+
+@keyframes slidein2 {
+  from {
+    display: block;
+    opacity: 0%;
+    margin-left: 5%;
+    width: 300%;
+  }
+
+  to {
+    display: flex;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*/////////////////////// ANIM TEL /////////////////////////////////*/
+
+/*
+.animtel1 {
+  animation-duration: 1s;
+  animation-name: slideintel;
+  animation-delay: 0ms;
+}
+
+.animtel2 {
+  animation-duration: 1.2s;
+  animation-name: slideintel;
+  animation-delay: 0ms;
+}
+
+.animtel3 {
+  animation-duration: 1.4s;
+  animation-name: slideintel;
+  animation-delay: 0ms;
+}
+
+.animtel4 {
+  animation-duration: 1.6s;
+  animation-name: slideintel;
+  animation-delay: 0ms;
+
+}.animtel5 {
+  animation-duration: 1.8s;
+  animation-name: slideintel;
+  animation-delay: 0ms;
+}
+
+
+@keyframes slideintel {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+*/
+
+
+
+
+/*//////////////////////////////////////////////////////////////////*/
+
+
+/*  /!\ RAJOUTE UN PADDING AUTOUR DU BLASON SUR LA PAGE D'ACCUEIL /!\
+
+#nav-accueil{
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    line-height: 47px;
+    background-color: rgba(255, 255, 255);
+    padding:1em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+*/
+
+.main-accueil{
+  /* -webkit-box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4);  */
+  /* box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4); */
+  height: 85vh;
+  width: 100%;
+  background-color: rgb(83, 83, 83);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-text{
+  z-index: 0;
+  position: absolute;
+  padding: 8vw;
+  padding-left: 6vw;
+  font-size: 4em;
+  top: 9vh;
+  transform: skewY(-11deg);
+  color: #FFFFFF;
+  text-shadow: 0 0px 40px #FFF, 5px 4px 0 #7A7A7A;
+}
+
+#stade{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  height: 85vh;
+  transition: transform .3s ease-in-out;
+}
+
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(51, 51, 51);
+  height: auto;
+  padding: 2em;
+}
+
+
+.footer-text{
+  font-size: 1.6em;
+  height: auto;
+  width: screen;
+  color: white;
+  display: flex;
+}
+
+.footer-logos{
+  padding-top: 1rem;
+  height: 4rem;
+}
+
+#insta{
+  margin :0.3rem;
+  filter: saturate(80%) brightness(90%);
+  width: 3rem;
+}
+
+#twitter{
+  margin: 0.3rem;
+  filter: saturate(80%) brightness(90%);
+  width: 3.2rem;
+  
+}
+
+#arobase{
+  font-size: 1.4rem;
+  color: rgb(227, 227, 227);
+  margin: 0.3rem;
+  position: relative;
+  left: 8rem;
+  top: -3rem;
+}
+
+#contact{
+  position: relative;
+  right: -50rem;
+}
+
+#mail{
+  position: relative;
+  top: -5rem;
+  font-size: 1.4rem;
+  color: rgb(227, 227, 227);
+  right: -73rem;
+
+}
+
+@media screen and (max-width: 800px){
+  #text-accueil{
+    display: none;
+  }
+  #text-accueil-mobile{
+    display: block;
+  }
+  header{
+    background-color: rgb(65, 65, 65);
+    height: 60vh;
+  }
+  .main-acceuil{
+    position: absolute;
+    top: 20vh;
+  }
+  .main-text{
+    font-size: 8vw;
+    padding: 0;
+    margin: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .footer-text{
+    font-size:8vw;
+  }
+}
+
+
+
+/*////////////////////// EFFECTIF //////////////////////////////////////////////*/
+
+
+.tab{
+    width: 70%;
+    text-align: center;
+    overflow:auto;
+    table-layout:fixed;
+    margin-top: 25px;
+    margin: auto;
+    margin-bottom: 25px;
+    
+}
+
+.joueurs{
+    width: 100px;
+    border-radius: 1.2em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.joueurs:hover{
+    width:6em;
+}
+
+.categorie{
+    font-size: 35px;
+    padding: 1.3em;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    overflow:auto;
+    table-layout:fixed;
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width:700px){
+  .tab{
+    width: 30rem;
+    z-index: 9999;
+  }
+  .joueurs{
+    width:70px;
+  }
+  .categorie{
+    font-size: 2em;
+  }
+  .joueurs:hover{
+    width:68px;
+  }
+  
+
+}
+
+
+/*//////////////// EFFECTIF RESPONSIVE ///////////////////*/
+
+@media screen and (max-width:480px){
+
+  .tab{
+    width:100vw;
+  }
+  .joueurs{
+    width: 20vw;
+  }
+  .categorie{
+    font-size: 10vw;
+  }
+
+}

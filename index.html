@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RCLens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">  
+</head>
+    <body id = "body-accueil">
+
+        <nav class="navbar" id = "nav-accueil">
+            <a href = "index.html"><img src="CSS/lens.png" class = "blason"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li class = "active" ><a href="index.html">Accueil</a></li>
+                        <li><a href="effectif.html">Effectif</a></li>
+                        <li><a href="JS Drag and drop - V2 Terrain/index.html">XI de Légendes</a></li>
+                    </ul>
+                </div>
+            <img src = "CSS/menu.png" class = "menu-hamburger">
+        </nav>
+
+            <header>
+                <div id = "text-accueil">
+
+                    <p><span class="anim1">BIENVENUE SUR LE SITE</span>
+                        <span class="anim2">NON-OFFICIEL DU</span>
+                        <span class="anim3">RACING CLUB DE LENS</span>
+                    </p>
+                    
+                </div>
+
+                <div id = "text-accueil-mobile"><p><span class="animtel1">BIENVENUE</span> 
+                    <br><span class="animtel2">SUR LE SITE</span><br>
+                    <span class="animtel3">NON-OFFICIEL</span><br> 
+                    <span class="animtel4">DU RACING</span><br> 
+                    <span class="animtel5">CLUB DE LENS</span></p>
+                </div>
+
+            </header>
+
+            <main class="main-accueil">
+                <p class="main-text">Créez votre 11 de <br>légendes !</p>
+                    <a href="JS Drag and drop - V2 Terrain/index.html">
+                        <img src="JS Drag and drop - V2 Terrain/legendes/presentation.png" id="stade">
+                    </a>
+            </main>
+
+            <footer>
+
+                <div class="footer-text">
+                    <p>Retrouvez moi sur les réseaux sociaux:</p>
+                    <p id="contact">Contactez moi:</p>
+                </div>
+
+                <div class="footer-logos">
+                    <img src="CSS/insta.svg" alt="instagram" id="insta">
+                    <img src="CSS/twitter.svg" alt="twitter" id="twitter">
+                    <p id="arobase">@neycklyz</p>
+                    <p id="mail">thomasjoly40@gmail.com</p>
+                </div>
+                
+            </footer>
+    </body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

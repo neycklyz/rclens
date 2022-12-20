@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    max-width:1900px;
+    background-color:black;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+h1{
+    font-family: legend;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 5vw;
+    padding-left: 40px;
+    font-size: 7vw;
+    color: white;
+    opacity: 60%;
+}
+
+@font-face {
+    font-family: legend;
+    src: url(fonts/Universal\ Serif.ttf);
+}
+
+#zone{
+    width:100vw;
+    position: absolute;
+    top:49vw;
+    left: -5.5vw;
+}
+
+#terrain{
+    position: absolute;
+    top:-2vw;
+    left: -0.4vw;
+    width:100vw;
+    z-index: -5;
+}
+
+#blason{
+    width: 10vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    opacity: 60%;
+}
+
+/*---------------------------------------
+--------------DRAG AND DROP--------------
+-----------------------------------------*/
+
+/*------------------------END---------------------*/
+
+.container2{
+    height: 50vw;
+}
+
+.active{
+    transform: translate(-1vw);
+    transition: ease-in 200ms;
+    position: absolute;
+    padding-right: 3vw;
+    height: 50vw;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.318);
+    filter: blur(5vw);
+
+}
+
+
+
+/*------------------------START---------------------*/
+
+
+.container1{
+    height:10vw;
+    width:79vw;
+    position: absolute;
+    top: 44vw;
+    left: 14.2vw;
+    padding-left: 3vw;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.207);
+}
+
+.active2{
+    border-radius: 1em;
+    height:10vw;
+    width:79vw;
+    position: absolute;
+    top: 44vw;
+    left: 14.2vw;
+    background-color: rgba(255, 255, 255, 0.207);
+    padding-left: 3vw;
+}
+
+
+.keita{
+    width: 12vw;
+    margin-left: -2vw;
+    margin-top: 0.5vw;
+}
+
+.legende{
+    width: 8vw;
+}
+
+
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*----------------------------------POSTES----------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+#BU1{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 2vw;
+    left: 50%;
+    padding-right: 4vw;
+    padding-bottom: 2vw;
+    margin-left: -6.2vw;
+    z-index: 1;
+}
+
+
+
+
+#pointBU1{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 7.2vw;
+    left: 50%;
+    margin-left: -2.5vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+
+#BU2{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 2vw;
+    left: 50%;
+    margin-left: 7.3vw;
+    padding-right: 4vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+   
+}
+
+#pointBU2{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 7.2vw;
+    left: 50%;
+    margin-left: 10.9vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+#MOC{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 9vw;
+    left: 50%;
+    padding-right: 2vw;
+    margin-left: 1vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointMOC{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 13.7vw;
+    left: 50%;
+    margin-left: 4.3vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+#MCG{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 14vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: -13vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointMCG{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 19vw;
+    left: 50%;
+    margin-left: -10vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+}
+
+
+#MCD{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 14vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: 16vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+
+#pointMCD{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 19vw;
+    left: 50%;
+    margin-left: 19vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+
+#MDC{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 20vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: 1vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointMDC{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 25vw;
+    left: 50%;
+    margin-left: 4.25vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+#DD{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 28vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: 23vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointDD{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 33vw;
+    left: 50%;
+    margin-left: 26vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+
+#DG{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 28vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: -21vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointDG{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 33vw;
+    left: 50%;
+    margin-left: -17.6vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+
+#DCG{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 28vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: -9vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointDCG{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 33vw;
+    left: 50%;
+    margin-left: -6vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+
+
+#DCD{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 28vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: 11.5vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointDCD{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 33vw;
+    left: 50%;
+    margin-left: 14.4vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+#G{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 32vw;
+    left: 50%;
+    padding-right: 4vw;
+    margin-left: 1vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+}
+
+#pointG{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 37.7vw;
+    left: 50%;
+    margin-left: 4.3vw;
+    z-index: 0;
+    box-shadow: 0px 3px 11px 2px #00000048;
+    
+}
+
+.color{
+    background: linear-gradient(63deg, rgba(255,0,0,1) 0%, rgba(255,230,0,1) 97%);
+}
+
+.fleche{
+    position: relative;
+    width: 8vw;
+    vertical-align:center;
+}
+
+.retour{
+    position: absolute;
+    top:20px;
+    left:20px;
+    height:auto;
+    width:auto;
+    background-color: rgb(193, 193, 193);
+    box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
+    border-radius: 1em;
+    display: table;
+}
+
+/*//////////////////////////////////////
+//////////////RESPONSIVE////////////////
+//////////////////////////////////////*/
+
+@media screen and (max-width:700px) {
+    #zone{
+        top:80vw;
+        left: -6.6vw;
+        padding-bottom: 60vw;
+    }
+    #terrain{
+        width: 161vw;
+        left: -32vw;
+    }
+    h1{ 
+        padding-top: 8vw;
+        font-size: 6vw;
+        padding-left: 0;
+    }
+    #blason{
+        width: 13vw;
+    }
+    .fleche{
+        top: 0.3vw;
+    }
+    #BU1, #BU2, #MOC, #MCD, #MCG, #MDC, #DD, #DG, #DCG, #DCD, #G{
+        width:8vw;
+        height:8vw;
+       /* opacity: 40%;
+        background-color: red; */
+    }
+    #pointBU1, #pointBU2, #pointMOC, #pointMCD, #pointMCG, #pointMDC, #pointDD, #pointDG, #pointDCG, #pointDCD, #pointG{
+        width: 3vw;
+        height: 3vw;
+    }
+    .active{
+        filter: blur(8vw);  
+    }
+    .container1{
+        top:74vw;
+        height:30vw;
+        left:14.5vw;
+    }
+    .active2{
+        top:74vw;
+        height:30vw;
+        left:14.5vw;
+    }
+    .legende{
+        width:15vw;
+    }
+    .keita{
+        width: 22.5vw;
+        margin-left: -4vw;
+    }
+    #BU1{
+        top: 4vw;
+        left: 50%;
+        padding-right: 7vw;
+        padding-bottom: 6vw;
+        margin-left: -13.2vw;
+    }
+    #pointBU1{
+        top: 12vw;
+        left: 50%;
+        margin-left: -7.2vw;    
+    }
+    #BU2{
+        top: 4vw;
+        left: 50%;
+        margin-left: 8.3vw;
+        padding-right: 8vw;
+        padding-bottom: 6vw;    
+    }    
+    #pointBU2{
+        top: 12vw;
+        left: 50%;
+        margin-left: 14.2vw;    
+    }  
+    #MOC{
+        top: 16vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: -2.2vw;
+        padding-bottom: 8vw;
+    }    
+    #pointMOC{
+        top: 23vw;
+        left: 50%;
+        margin-left: 3.7vw;   
+    }    
+    #MCG{
+        top: 25vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: -23.8vw;
+        padding-bottom: 6vw;
+    }    
+    #pointMCG{
+        top: 33vw;
+        left: 50%;
+        margin-left: -18vw;
+    }  
+    #MCD{
+        top: 25vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: 19vw;
+        padding-bottom: 6vw;
+    }   
+    #pointMCD{
+        top: 33vw;
+        left: 50%;
+        margin-left: 25vw;
+    }   
+    #MDC{
+        top: 31vw;
+        left: 50%;
+        padding-right: 6vw;
+        margin-left: -2vw;
+        padding-bottom: 10vw;
+    }   
+    #pointMDC{
+        top: 40vw;
+        left: 50%;
+        margin-left: 3.55vw;   
+    }  
+    #DD{
+        top: 46vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: 34vw;
+        padding-bottom: 10vw;
+
+    }  
+    #pointDD{
+        top: 55vw;
+        left: 50%;
+        margin-left: 40vw;    
+    }   
+    #DG{
+        top: 46vw;
+        left: 50%;
+        padding-right: 7vw;
+        padding-bottom: 10vw;
+        margin-left: -39vw;
+    }   
+    #pointDG{
+        top: 55vw;
+        left: 50%;
+        margin-left: -33vw; 
+    }  
+    #DCG{
+        top: 46vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: -19vw;
+        padding-bottom: 10vw;
+    } 
+    #pointDCG{
+        top: 55vw;
+        left: 50%;
+        margin-left: -13vw;    
+    }   
+    #DCD{
+        top: 46vw;
+        left: 50%;
+        padding-right: 7vw;
+        margin-left: 14vw;
+        padding-bottom: 10vw;
+    }    
+    #pointDCD{
+        top: 55vw;
+        left: 50%;
+        margin-left: 20vw;  
+    }  
+    #G{
+        top: 53vw;
+        left: 50%;
+        padding-right: 7.3vw;
+        margin-left: -2.7vw;
+        padding-bottom: 9vw;
+    }  
+    #pointG{
+        top: 61vw;
+        left: 50%;
+        margin-left: 3.7vw;   
+    }
+
+}

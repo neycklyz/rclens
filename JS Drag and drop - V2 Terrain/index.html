@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <script src="DragDropTouch.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and drop</title>
+</head>
+<body>
+<h1>RC LENS LEGENDS</h1>
+<img src="img/blason.svg" alt="blason" id="blason"> 
+<div><img src="img/terrain.svg" alt="terrain" id="terrain"></div>
+    <div class="retour"><a href="javascript:history.back()"><img src="../Joueurs/Images/fleche.png" class="fleche"></a></div>
+    <section id="zone">
+     
+            <div class="container2">
+                
+                <span ondragover="return over(event)"
+                ondrop="return drop(event)" ondragleave="leave(event)" 
+                ondragstart="start(event)" id="BU1"></span>
+
+                    <span id="pointBU1" class="color"></span>
+                    
+
+                <span ondragover="return over(event)"
+                ondrop="return drop(event)" ondragleave="leave(event)" 
+                ondragstart="start(event)" id="BU2"></span>
+
+                    <span id="pointBU2" class="color"></span>
+
+                
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="MOC"></span>
+        
+                    <span id="pointMOC" class="color"></span>
+
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="MCG"></span>
+
+
+                    <span id="pointMCG" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="MCD"></span>
+
+
+                    <span id="pointMCD" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="MDC"></span>
+
+
+                    <span id="pointMDC" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="DD"></span>
+
+
+                    <span id="pointDD" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="DG"></span>
+
+
+                    <span id="pointDG" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="DCG"></span>
+
+
+                    <span id="pointDCG" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="DCD"></span>
+
+
+                    <span id="pointDCD" class="color"></span>
+
+                <span ondragover="return over(event)"
+                    ondrop="return drop(event)" ondragleave="leave(event)" 
+                    ondragstart="start(event)" id="G"></span>
+
+
+                    <span id="pointG" class="color"></span>
+
+
+
+
+
+
+
+
+
+
+                    <div class="container1" ondragstart="start(event)"
+                    ondragover="return over2(event)"
+                    ondrop="return drop2(event)" ondragleave="leave2(event)">
+                        <img src="legendes/vairelles.png" class="legende" id="1" draggable="true">
+                        <img src="legendes/sikora.png" class="legende" id="2" draggable="true">
+                        <img src="legendes/moreira.png" class="legende" id="3" draggable="true">
+                        <img src="legendes/warmuz.png" class="legende" id="4" draggable="true">
+                        <img src="legendes/smicer.png" class="legende" id="5" draggable="true">
+                        <img src="legendes/boli.png" class="legende" id="6" draggable="true">
+                        <img src="legendes/varane.png" class="legende" id="7" draggable="true">
+                        <img src="legendes/keita.png" class="keita" id="8" draggable="true">
+                        
+                    </div>
+            </div>
+
+       
+    </section>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* ALL */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0ms;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.retour{
+    position: absolute;
+    top:20px;
+    left:20px;
+    height:auto;
+    width:auto;
+    background-color: rgb(193, 193, 193);
+    box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
+    border-radius: 1em;
+    display: table;
+}
+
+/*
+.retour a{
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    vertical-align:middle;
+    display: table-cell;
+}
+*/
+
+.fleche{
+    width: 100px;
+    vertical-align:center;
+}
+
+@font-face {
+    font-family: myFonts;
+    src: url(Fonts/tommy.otf);
+}
+
+
+.description{
+    margin-top: 62vh;
+    background-color: rgba(97, 97, 97, 0.95);
+    backdrop-filter: blur(8px);
+    height: auto;
+    display:table;
+    border-spacing: 0px;
+    box-shadow: 20em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    -webkit-box-shadow: 0px 16px 106px 89px rgba(0,0,0,0.7); 
+    box-shadow: 0px 16px 106px 89px rgba(0,0,0,0.7);
+   
+}
+
+.nom{
+    text-align: center;
+    font-size: 7vw;
+    height: auto;
+    width:auto;
+    z-index: 2;
+    display: block;
+    padding:4vh;
+    margin-top: auto;
+    margin:auto;
+    color:rgb(177, 177, 177);
+
+}
+
+.texte{
+    text-align: left;
+    font-size: 1.2em;
+    color:rgb(177, 177, 177);
+    height: auto;
+    width:200vh;
+    display: table-cell;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-bottom: 4vh;
+    text-indent: 3em;
+}
+
+.color{
+    background: -webkit-linear-gradient(2.20turn, rgb(253, 0, 0), rgb(255, 221, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8vw;
+    
+}
+
+
+
+
+
+
+
+/*///////////////////////////// SAMBA ////////////////////////////////////*/
+
+#body-samba{
+    font-family: myFonts;
+    height:100%;
+    background-image: url(Images/samba.jpg);
+    background-size: 100vw;
+    background-position-x: center;
+    background-position-y: 0vw;
+    background-repeat:no-repeat;
+}
+
+
+
+
+/*///////////////////////////// MEDINA ////////////////////////////////////*/
+
+#body-medina{
+    background-image: url(Images/medina.jpg);
+    font-family: myFonts;
+    height:100%;
+    background-size: 100vw;
+    background-position-x: center;
+    background-position-y: 0vh;
+    background-repeat:no-repeat;
+}
+
+
+
+
+@media screen and (max-width:830px){
+    .nom{
+        font-size: 11vw;
+        display:flex;
+        flex-direction: column;
+    }
+    .color{
+        font-size: 15vw;
+    }
+    .description{
+        margin-top: 70vh;
+    }
+    .texte{
+        font-size: 5vw;
+    }
+    #body-medina{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    #body-samba{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .fleche{
+        width:13vw;
+    }
+}
+
+
+@media screen and (max-device-width:830px){
+    .nom{
+        font-size: 11vw;
+        display:flex;
+        flex-direction: column;
+    }
+    .color{
+        font-size: 15vw;
+    }
+    .description{
+        margin-top: 70vh;
+    }
+    .texte{
+        font-size: 5vw;
+    }
+    #body-medina{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    #body-samba{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .fleche{
+        width:25vw;
+    }
+}
+
