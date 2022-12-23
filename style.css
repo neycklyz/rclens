@@ -388,6 +388,12 @@ footer{
   .main-text{
     display: none;
   }
+  #contact{
+    display: none;
+  }
+  #mail{
+    display: none;
+  }
 }
 
 /*///////////////////////////////////////////////////////*/
