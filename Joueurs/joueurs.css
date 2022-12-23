@@ -75,7 +75,7 @@ html{
     text-align: center;
     font-size: 7vw;
     height: auto;
-    width:auto;
+    width: auto;
     z-index: 2;
     display: block;
     padding:4vh;
@@ -90,7 +90,6 @@ html{
     font-size: 1.2em;
     color:rgb(177, 177, 177);
     height: auto;
-    width:200vh;
     display: table-cell;
     padding-left: 4vh;
     padding-right: 4vh;
