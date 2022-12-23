@@ -277,24 +277,6 @@ header{
 /*//////////////////////////////////////////////////////////////////*/
 
 
-/*  /!\ RAJOUTE UN PADDING AUTOUR DU BLASON SUR LA PAGE D'ACCUEIL /!\
-
-#nav-accueil{
-    position:sticky;
-    top:0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-    line-height: 47px;
-    background-color: rgba(255, 255, 255);
-    padding:1em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
- 
-}
-*/
-
 .main-accueil{
   /* -webkit-box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4);  */
   /* box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4); */
@@ -393,33 +375,24 @@ footer{
   }
   #text-accueil-mobile{
     display: block;
+    position: absolute;
+    top: 15rem;
   }
   header{
     background-color: rgb(65, 65, 65);
-    height: 60vh;
+    height: 100vh;
   }
-  .main-acceuil{
-    position: absolute;
-    top: 20vh;
+  #stade{
+    display: none;
   }
   .main-text{
-    font-size: 8vw;
-    padding: 0;
-    margin: 2em;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-  .footer-text{
-    font-size:8vw;
+    display: none;
   }
 }
 
-
-
-/*////////////////////// EFFECTIF //////////////////////////////////////////////*/
-
+/*///////////////////////////////////////////////////////*/
+/*////////////////////// EFFECTIF ///////////////////////*/
+/*///////////////////////////////////////////////////////*/
 
 .tab{
     width: 70%;
