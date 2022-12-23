@@ -447,7 +447,7 @@ footer{
     font-size: 2em;
   }
   .joueurs:hover{
-    width:68px;
+    width:57%;
   }
   
 
@@ -466,6 +466,9 @@ footer{
   }
   .categorie{
     font-size: 10vw;
+  }
+  .joueurs:hover{
+    width:80%;
   }
 
 }
