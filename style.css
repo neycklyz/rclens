@@ -246,6 +246,15 @@ header{
 }
 
 
+#presentation{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#presentation h1{
+
+}
 
 /* #text-accueil p :nth-child(1){
   color:black;
@@ -264,7 +273,7 @@ header{
 
 } */
 
-
+/* 
 @keyframes slidein2 {
   from {
     display: block;
@@ -278,7 +287,7 @@ header{
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 /*/////////////////////// ANIM TEL /////////////////////////////////*/
 
