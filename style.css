@@ -1,5 +1,12 @@
 /* ALL */
 
+
+:root{
+  --main-color: #333333;
+  --second-color: #edc531;
+  --third-color: #64520f;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +16,7 @@
 
 body{
   font-family: myFonts;
-  /* background: linear-gradient(0.45turn,rgba(244, 85, 85, 0.7),rgba(255, 255, 146, 0.7)); */
-  background-color: #989898;
-  width: 100%;
+  background-color: var(--main-color);
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -37,7 +42,7 @@ body{
   box-sizing: border-box;
   align-items: center;
   line-height: 47px;
-  background-color: rgb(235, 235, 235);
+  background-color: var(--second-color);
   padding:1em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -49,12 +54,19 @@ body{
 } 
 
 .navbar a:hover{
-    color: rgb(255, 204, 0);
-}   
+    color: var(--third-color);
+}
+
+.navbar .nav-links ul li.active a{
+    color: var(--third-color);
+    font-weight: 600;
+}
 
 .navbar .blason{
     width: 3em;
     align-items: left;
+    filter: saturate(0)
+            opacity(90%);
     display: flex;
 }
 
@@ -73,10 +85,7 @@ body{
     display: flex;
 }
 
-.navbar .nav-links ul li.active a{
-    color: red;
-    font-weight: 600;
-}
+
 
 .menu-hamburger{
   width: 50px;
@@ -282,7 +291,7 @@ header{
   /* box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4); */
   height: 100vh;
   width: 100%;
-  background-color: rgb(83, 83, 83);
+  background-color: var(--main-color);
   backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
@@ -313,7 +322,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(51, 51, 51);
+  background-color: var(--main-color);
   height: auto;
   padding: 2em;
 }
@@ -419,24 +428,25 @@ footer p{
 .joueurs{
     width: 100px;
     border-radius: 1.2em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    background-color: rgb(255, 255, 255);
+    background-color: var(--second-color);
     text-align: center;
 }
 
 .joueurs:hover{
-    width:6em;
+    transition: ease-in .14s;
+    box-shadow: 0px 0px 20px var(--second-color); 
 }
 
 .categorie{
-    font-size: 35px;
-    padding: 1.3em;
-    margin: auto;
-    width: 70%;
-    text-align: center;
-    overflow:auto;
-    table-layout:fixed;
-    margin-top: 25px;
+  color: var(--second-color);  
+  font-size: 35px;
+  padding: 1.3em;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  overflow:auto;
+  table-layout:fixed;
+  margin-top: 25px;
 }
 
 

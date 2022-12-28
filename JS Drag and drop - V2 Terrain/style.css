@@ -4,12 +4,11 @@
 }
 
 html{
-    max-width:1900px;
     background-color:black;
 }
 
 body {
-    width: 100%;
+    width: auto;
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -55,6 +54,8 @@ h1{
     margin-right:auto;
     opacity: 60%;
 }
+
+
 
 /*---------------------------------------
 --------------DRAG AND DROP--------------
