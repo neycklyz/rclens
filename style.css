@@ -194,10 +194,12 @@ header{
   background-size: cover;
   display: flex;
   width:100%;
+  display: grid;
+  place-items: center;
 }
 
 
-#text-accueil{
+/* #text-accueil{
   display: none;
   font-size: 6rem;
   width:100vw;
@@ -205,9 +207,33 @@ header{
   padding-right: 2em;
   padding-bottom: 2em;
   padding-top: 1.5em;
+} */
 
 
+.titre{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 8rem;
+  color: var(--second-color);
+  text-shadow: 0 0 0.5em var(--second-color);
+  position: relative;
 }
+
+
+.titre::before{
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--second-color);
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+}
+
 
 #text-accueil-mobile{
   display:none;
@@ -400,7 +426,7 @@ footer p{
     display: flex;
     justify-content: center;
   }
-  #text-accueil{
+  .titre{
     display: none;
   }
   #text-accueil-mobile{
