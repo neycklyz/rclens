@@ -65,38 +65,103 @@ body{
 
 .navbar a{
     color: rgb(0, 0, 0);
+    position: relative;
 } 
 
-.navbar a:hover{
-    color: var(--third-color);
+.nav-links ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  height: 0.2rem;
+  transition: 0.3s;
+}
+
+.navbar .nav-links ul li a:hover::after{
+  content: "";
+  width: 100%;
+}
+
+.nav-links ul li a::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  top: -8px;
+  right: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  height: 0.2rem;
+  transition: 0.3s;
+
+}
+
+
+.navbar .nav-links ul li a:hover::before{
+  content: "";
+  width: 100%;
 }
 
 .navbar .nav-links ul li.active a{
-    color: var(--third-color);
     font-weight: 600;
+    position: relative;
 }
 
+/* .navbar .nav-links ul li.active a::before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  height: 0.2rem;
+  width: 100%;
+
+}
+
+.navbar .nav-links ul li.active a::after{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  height: 0.2rem;
+  width: 100%;
+} */
+
+
+
+
+
+
 .navbar .blason{
-    width: 3em;
-    align-items: left;
-    filter: saturate(0)
+  width: 3em;
+  align-items: left;
+  filter: saturate(0)
             opacity(90%);
-    display: flex;
+  display: flex;
 }
 
 .navbar .nav-links ul {
-    display: flex;
-    padding-left:75px;
+  display: flex;
+  padding-left:75px;
 }
 
 .navbar .nav-links{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .nav-links ul li{
-    margin: 0 25px;
-    display: flex;
+  margin: 0 25px;
+  display: flex;
 }
 
 .menu-hamburger{
@@ -219,19 +284,44 @@ header{
 
 
 #presentation{
-  height: 80vh;
-  font-size: 2rem;
-  color: var(--fourth-color);
+  height: 100vh;
 }
 
 #presentation h1{
   text-align: center;
+  font-size: 3rem;
+  color: var(--fourth-color);
+  text-shadow: 0 0 0.8em var(--fourth-color);
+  padding-bottom: 2em;
 }
 
-#presentation p{
+#explication{
   text-align: center;
   padding: 2em;
+  padding-top: 0;
+  font-size: 2rem;
+  color: var(--fourth-color);
 }
+
+.portfolio{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.categorie p{
+  padding-top: 1.3em;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.categorie img{
+  width: 8rem;
+}
+
+
 
 /* #text-accueil p :nth-child(1){
   color:black;
