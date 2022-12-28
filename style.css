@@ -239,18 +239,15 @@ header{
   display:none;
   font-size: 10vw;
   position: absolute;
-  top:200px;
-  left:15vw;
-  background: -webkit-linear-gradient(0.4turn, rgb(253, 0, 0), rgb(255, 208, 0));
+  background: -webkit-linear-gradient(0.4turn, var(--second-color), var(--fourth-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 
 
-#text-accueil p :nth-child(1){
+/* #text-accueil p :nth-child(1){
   color:black;
   animation: slidein2 1s none 0ms;
 }
@@ -265,7 +262,7 @@ header{
   color:rgb(255, 221, 0);
   animation: slidein2 1.4s none 0ms;
 
-}
+} */
 
 
 @keyframes slidein2 {
