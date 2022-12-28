@@ -42,14 +42,12 @@ body{
   width: 100%;
   box-sizing: border-box;
   align-items: center;
-  line-height: 47px;
-  /* background-color: var(--second-color); */
   padding:1em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1;
   background: linear-gradient(-45deg, var(--second-color), var(--fourth-color));
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
+  z-index: 1;
 }
 
 @keyframes gradient {
@@ -101,8 +99,6 @@ body{
     display: flex;
 }
 
-
-
 .menu-hamburger{
   width: 50px;
   position: absolute;
@@ -110,30 +106,6 @@ body{
   display: none;
   cursor: pointer;
 }
-
-
-
-/* ANIM NAV */
-
-/*nav{
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-delay: 0ms;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-*/
-
 
 @media screen and (max-width:800px){
   .navbar a:hover{
