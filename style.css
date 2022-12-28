@@ -2,9 +2,10 @@
 
 
 :root{
-  --main-color: #333333;
-  --second-color: #edc531;
+  --main-color:#333333;
+  --second-color:#edcf65;
   --third-color: #64520f;
+  --fourth-color:#89ce94;
 }
 
 *{
@@ -42,10 +43,25 @@ body{
   box-sizing: border-box;
   align-items: center;
   line-height: 47px;
-  background-color: var(--second-color);
+  /* background-color: var(--second-color); */
   padding:1em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  background: linear-gradient(-45deg, var(--second-color), var(--fourth-color));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -182,6 +198,7 @@ header{
 
 
 #text-accueil{
+  display: none;
   font-size: 6rem;
   width:100vw;
   padding-left: 2em;
