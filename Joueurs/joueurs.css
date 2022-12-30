@@ -57,7 +57,8 @@ html{
 
 
 .description{
-    margin-top: 62vh;
+    position: absolute;
+    bottom: 0;
     background-color: rgba(97, 97, 97, 0.95);
     backdrop-filter: blur(8px);
     height: auto;
