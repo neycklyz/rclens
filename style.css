@@ -296,7 +296,7 @@ header{
 
 
 #presentation{
-  height: 100vh;
+  height: auto;
   padding-top: 5rem;
 }
 
