@@ -252,10 +252,15 @@ header{
   margin-right: auto;
   font-size: 8rem;
   color: var(--second-color);
-  text-shadow: 0 0 0.5em var(--second-color);
+  text-shadow: 0 0 0.3em #edcf656e;
   position: relative;
+  transition: 0.3s;
 }
 
+.titre:hover{
+  transition: ease-in 0.3s;
+  text-shadow: 0 0 0.5em var(--second-color);
+}
 
 .titre::before{
   content: "";
@@ -269,6 +274,13 @@ header{
   background: var(--second-color);
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
+  opacity: 60%;
+  transition: 0.3s;
+}
+
+.titre:hover::before{
+  transition: ease-in 0.3s;
+  opacity: 100%;
 }
 
 
@@ -285,6 +297,7 @@ header{
 
 #presentation{
   height: 100vh;
+  padding-top: 5rem;
 }
 
 #presentation h1{
