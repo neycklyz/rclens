@@ -15,6 +15,11 @@ body {
             box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myFonts;
+    src: url(../Fonts/tommy.otf);
+}
+
 h1{
     font-family: legend;
     text-align: center;
@@ -433,6 +438,42 @@ h1{
     display: table;
 }
 
+#refresh{
+    position: absolute;
+    right: 4rem;
+    top: 93vw;
+    height: 6vw;
+    width: 6vw;
+    border-radius: 100%;
+    color: white;
+    background-color: red;
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.658);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: myFonts;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+#refresh:hover{
+    transition: ease-in 0.3s;
+    box-shadow: 0 0 3rem red;
+}
+
+#refresh img{
+    position: relative;
+    top: 0.1em;
+    width: 3vw;
+    transition: 0.5s;
+}
+
+#refresh img:hover{
+    transform: rotate(75deg);
+    transition: 0.5s;
+}
+
 /*//////////////////////////////////////
 //////////////RESPONSIVE////////////////
 //////////////////////////////////////*/
@@ -451,6 +492,10 @@ h1{
         padding-top: 8vw;
         font-size: 6vw;
         padding-left: 0;
+    }
+    #refresh{
+        top: 156vw;
+        right: 1em;
     }
     #blason{
         width: 13vw;
@@ -475,6 +520,7 @@ h1{
         top:74vw;
         height:30vw;
         left:14.5vw;
+        width: auto;
     }
     .active2{
         top:74vw;
