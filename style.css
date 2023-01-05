@@ -442,7 +442,7 @@ header{
   z-index: -1;
   right: 0;
   height: 100vh;
-  transition: transform .3s ease-in-out;
+  filter: saturate(0);
 }
 
 
@@ -559,10 +559,11 @@ footer p{
     border-radius: 1.2em;
     background-color: var(--second-color);
     text-align: center;
+    transition: .2s;
 }
 
 .joueurs:hover{
-    transition: ease-in .14s;
+    transition: ease-in .2s;
     box-shadow: 0px 0px 20px var(--second-color); 
 }
 
