@@ -525,7 +525,6 @@ footer p{
     font-size: calc(1rem + 5vh);
   }
   header{
-    background-color: rgb(65, 65, 65);
     height: 100vh;
   }
   #stade{
