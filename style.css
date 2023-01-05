@@ -522,7 +522,6 @@ footer p{
   #text-accueil-mobile{
     display: flex;
     width: 80vw;
-    top: calc(10vh + 10rem);
     font-size: calc(1rem + 5vh);
   }
   header{
