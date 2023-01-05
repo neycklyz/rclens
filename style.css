@@ -443,6 +443,12 @@ header{
   right: 0;
   height: 100vh;
   filter: saturate(0);
+  transition: .4s;
+}
+
+#stade:hover{
+  transition: ease-in .4s;
+  filter: saturate(100%);
 }
 
 
