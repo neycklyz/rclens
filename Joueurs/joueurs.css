@@ -153,6 +153,7 @@ html{
         font-size: 15vw;
     }
     .description{
+        position: relative;
         margin-top: 70vh;
     }
     .texte{
@@ -184,7 +185,8 @@ html{
         font-size: 15vw;
     }
     .description{
-        margin-top: 70vh;
+        position: relative;
+        margin-top:70vh;
     }
     .texte{
         font-size: 5vw;
