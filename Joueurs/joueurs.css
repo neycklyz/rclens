@@ -154,6 +154,7 @@ html{
     }
     .description{
         position: relative;
+        padding-bottom: 2em;
         margin-top: 70vh;
     }
     .texte{
@@ -186,6 +187,7 @@ html{
     }
     .description{
         position: relative;
+        padding-bottom: 2em;
         margin-top:70vh;
     }
     .texte{
