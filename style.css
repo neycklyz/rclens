@@ -570,6 +570,7 @@ footer p{
 }
 
 .categorie{
+  text-transform: uppercase;
   color: var(--second-color);  
   font-size: 35px;
   padding: 1.3em;

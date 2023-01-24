@@ -1,0 +1,1 @@
+INSERT INTO joueurs(role, prenom, nom, age, description, numero, img, ref, tete) VALUES ('gardien', 'Wuilker', 'Faríñez', 24, 'Lorem Ipsum', 1, 'Joueurs/Images/farinez.jpg', 'J3', 'CSS/farinez.png');
