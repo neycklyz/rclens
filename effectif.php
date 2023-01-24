@@ -1,10 +1,31 @@
 <?php
+session_start();
+include('effectifHelper.php');
 
-$user = 'root';
-$pass = '';
-$db = new PDO ('mysql:host=localhost;dbname=effectif', $user, $pass);
+error_reporting(E_ALL); // check all errors
+ini_set('display_errors',1); // display errors
+$conn = mysqli_connect('localhost','root','','effectif');//database connection code
+
+$effectif_data = array(); // create an empty array
+
+if($conn){
+ $prod = mysqli_query($conn,"SELECT * FROM joueurs");
+    while ($all = mysqli_fetch_array($prod)) {
+        $effectif_data[] = array('role'=>$all['role'], 'prenom'=>$all['prenom'],
+        'nom'=>$all['nom'], 'age'=>$all['age'], 'description'=>$all['description'], 'numero'=>$all['numero'],
+        'img'=>$all['img'], 'ref'=>$all['ref'], 'tete'=>$all['tete']); // assignment
+    }
+    // echo "<pre/>";var_dump($effectif_data); // print product_data array
+}else{
+
+  echo mysqli_connect_error(); // show what problem occur in database connectivity
+}
+mysqli_close($conn); // close connection
+// echo $effectif_data[7]['prenom'];
+
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -36,77 +57,59 @@ $db = new PDO ('mysql:host=localhost;dbname=effectif', $user, $pass);
         </div>
         <img src = "CSS/menu.png" class = "menu-hamburger">
     </nav>
-        <div style = "overflow-x:auto;">
-                <table class = "tab">
-                    <tr>
-                        <td class = "categorie">Gardiens</td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td><a  href = "Joueurs/samba.html"><img class = "joueurs" src = "CSS/samba.png"></a></td>
-                        <td><img class = "joueurs" src = "CSS/leca.png"></td>
-                        <td><img class = "joueurs" src = "CSS/farinez.png"></td>
-                        <td><img class = "joueurs" src = "CSS/pandor.png"></td>
-                    </tr>
-                </table>
-             
-                <table class = "tab tabanim">
-                    <tr>
-                        <td  class = "categorie">Défenseurs</td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td><a href = "Joueurs/medina.html"><img class = "joueurs" src = "CSS/medina.png"></a></td>
-                        <td><img class = "joueurs" src = "CSS/danso.png"></td>
-                        <td><img class = "joueurs" src = "CSS/gradit.png"></td>
-                        <td><img class = "joueurs" src = "CSS/haidara.png"></td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td><img class = "joueurs" src = "CSS/louveau.png"></td>
-                        <td><img class = "joueurs" src = "CSS/fortes.png"></td>
-                        <td><img class = "joueurs" src = "CSS/machado.png"></td>
-                        <td><img class = "joueurs" src = "CSS/boura.png"></td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td  class = "categorie">Milieux</td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td><img class = "joueurs" src = "CSS/samed.png"></td>
-                        <td><img class = "joueurs" src = "CSS/fofana.png"></td>
-                        <td><img class = "joueurs" src = "CSS/poreba.png"></td>
-                        <td><img class = "joueurs" src = "CSS/frankowski.png"></td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td><img class = "joueurs" src = "CSS/onana.png"></td>
-                        <td><img class = "joueurs" src = "CSS/cabot.png"></td>
-                        <td><img class = "joueurs" src = "CSS/dacosta.png"></td>
-                        <td><img class = "joueurs" src = "CSS/claudemaurice.png"></td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>
-                        <td  class = "categorie">Attaquants</td>
-                    </tr>
-                </table>
-                <table class = "tab tabanim">
-                    <tr>      
+       
+                
+                   
+    <div class = "role">Gardiens</div>
+        <div id="gardiens">
+            <?php
+            foreach($effectif_data as $joueur => $k){
+                if($effectif_data[$joueur]['role']=='gardien'){
+                    afficheJoueur($effectif_data, $joueur);  
+                    }
+                }
+            ?>
+         </div>
+    </div>
+                       
+    <div class = "role">Défenseurs</div>
+        <div id="defenseurs">
+            <?php
+                $count = 0;
+                foreach($effectif_data as $joueur => $k){
+                    if($effectif_data[$joueur]['role']=='defenseur'){
+                        afficheJoueur($effectif_data, $joueur);
+                        $count++;
+                    }
+                    if($count == 4){
+                        $count = 0;
+                        echo '</div> <div id="defenseurs">';
+                        
+                    }
+                }
+            ?>
+        </div>
+
+        <div class = "role">Milieux</div>
+                <!-- <div id="milieux">
+                    <td><img class = "joueurs" src = "CSS/samed.png"></td>
+                    <td><img class = "joueurs" src = "CSS/fofana.png"></td>
+                    <td><img class = "joueurs" src = "CSS/poreba.png"></td>
+                    <td><img class = "joueurs" src = "CSS/frankowski.png"></td>
+                </div>
+                <div id="milieux">
+                    <div><img class = "joueurs" src = "CSS/onana.png"></div>
+                    <div><img class = "joueurs" src = "CSS/cabot.png"></div>
+                    <div><img class = "joueurs" src = "CSS/dacosta.png"></div>
+                    <div><img class = "joueurs" src = "CSS/claudemaurice.png"></div>
+                </div> -->
+        <div  class = "role">Attaquants</div>
+                    <div id="attaquants">      
                         <td><img class = "joueurs" src = "CSS/said.png"></td>
                         <td><img class = "joueurs" src = "CSS/openda.png"></td>
                         <td><img class = "joueurs" src = "CSS/sotoca.png"></td>
                         <td><img class = "joueurs" src = "CSS/buksa.png"></td>
-                    </tr>
-                </table>
-        </div>
+                    </div>
     </body>
         <script>
             const menuHamburger = document.querySelector(".menu-hamburger")

@@ -546,14 +546,22 @@ footer p{
 /*///////////////////////////////////////////////////////*/
 
 .tab{
-    width: 70%;
     text-align: center;
-    overflow:auto;
-    table-layout:fixed;
     margin-top: 25px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 25px;
-    
+    display: flex;
+    justify-content: space-between;
+}
+
+#gardiens, #defenseurs, #milieux, #attaquants{
+  text-align: center;
+  width: 70%;
+  margin-top: 25px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .joueurs{
@@ -569,17 +577,13 @@ footer p{
     box-shadow: 0px 0px 20px var(--second-color); 
 }
 
-.categorie{
+.role{
   text-transform: uppercase;
-  color: var(--second-color);  
+  color: var(--second-color);
+  margin-inline: auto;  
   font-size: 35px;
   padding: 1.3em;
-  margin: auto;
-  width: 70%;
   text-align: center;
-  overflow:auto;
-  table-layout:fixed;
-  margin-top: 25px;
 }
 
 
