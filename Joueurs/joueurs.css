@@ -7,19 +7,6 @@
     list-style: none;
 }
 
-
-html{
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 0ms;
-}
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 .retour{
     position: absolute;
     top:20px;
@@ -55,8 +42,12 @@ html{
     src: url(Fonts/tommy.otf);
 }
 
+body{
+    font-family: myFonts;
+}
 
 .description{
+    width: 100%;
     position: absolute;
     bottom: 0;
     background-color: rgba(97, 97, 97, 0.95);
@@ -115,25 +106,15 @@ html{
 
 /*///////////////////////////// SAMBA ////////////////////////////////////*/
 
-#body-samba{
-    font-family: myFonts;
-    height:100%;
-    background-image: url(Images/samba.jpg);
-    background-size: 100vw;
-    background-position-x: center;
-    background-position-y: 0vw;
-    background-repeat:no-repeat;
-}
 
 
 
 
 /*///////////////////////////// MEDINA ////////////////////////////////////*/
 
-#body-medina{
-    background-image: url(Images/medina.jpg);
+body{
     font-family: myFonts;
-    height:100%;
+    height: 100%;
     background-size: 100vw;
     background-position-x: center;
     background-position-y: 0vh;
@@ -159,12 +140,7 @@ html{
     .texte{
         font-size: 5vw;
     }
-    #body-medina{
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
-    #body-samba{
+    body{
         background-repeat:no-repeat;
         background-size:cover;
         background-position:center;
@@ -191,12 +167,7 @@ html{
     .texte{
         font-size: 5vw;
     }
-    #body-medina{
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
-    #body-samba{
+    body{
         background-repeat:no-repeat;
         background-size:cover;
         background-position:center;
