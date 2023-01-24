@@ -46,6 +46,7 @@ mysqli_close($conn); // close connection
 </head>
     
 <body>
+
     <nav class="navbar">
         <a href = "index.html"><img src="CSS/blason.svg" class = "blason"></a>
         <div class="nav-links">
@@ -91,6 +92,22 @@ mysqli_close($conn); // close connection
         </div>
 
         <div class = "role">Milieux</div>
+            <div id="milieux">
+                <?php
+                    $count = 0;
+                    foreach($effectif_data as $joueur => $k){
+                        if($effectif_data[$joueur]['role']=='milieu'){
+                            afficheJoueur($effectif_data, $joueur);
+                            $count++;
+                        }
+                        if($count == 4){
+                            $count = 0;
+                            echo '</div> <div id="milieu">';
+                            
+                        }
+                    }
+                ?>
+        </div>
                 <!-- <div id="milieux">
                     <td><img class = "joueurs" src = "CSS/samed.png"></td>
                     <td><img class = "joueurs" src = "CSS/fofana.png"></td>
@@ -110,7 +127,9 @@ mysqli_close($conn); // close connection
                         <td><img class = "joueurs" src = "CSS/sotoca.png"></td>
                         <td><img class = "joueurs" src = "CSS/buksa.png"></td>
                     </div>
-    </body>
+
+</body>
+
         <script>
             const menuHamburger = document.querySelector(".menu-hamburger")
             const navLinks = document.querySelector(".nav-links")
@@ -119,4 +138,5 @@ mysqli_close($conn); // close connection
             navLinks.classList.toggle('mobile-menu')
             })
         </script>
+        
 </html>
