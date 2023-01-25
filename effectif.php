@@ -71,7 +71,6 @@ mysqli_close($conn); // close connection
                 }
             ?>
          </div>
-    </div>
                        
     <div class = "role">Défenseurs</div>
         <div id="defenseurs">
@@ -102,31 +101,30 @@ mysqli_close($conn); // close connection
                         }
                         if($count == 4){
                             $count = 0;
-                            echo '</div> <div id="milieu">';
+                            echo '</div> <div id="milieux">';
                             
                         }
                     }
                 ?>
         </div>
-                <!-- <div id="milieux">
-                    <td><img class = "joueurs" src = "CSS/samed.png"></td>
-                    <td><img class = "joueurs" src = "CSS/fofana.png"></td>
-                    <td><img class = "joueurs" src = "CSS/poreba.png"></td>
-                    <td><img class = "joueurs" src = "CSS/frankowski.png"></td>
-                </div>
-                <div id="milieux">
-                    <div><img class = "joueurs" src = "CSS/onana.png"></div>
-                    <div><img class = "joueurs" src = "CSS/cabot.png"></div>
-                    <div><img class = "joueurs" src = "CSS/dacosta.png"></div>
-                    <div><img class = "joueurs" src = "CSS/claudemaurice.png"></div>
-                </div> -->
-        <div  class = "role">Attaquants</div>
-                    <div id="attaquants">      
-                        <td><img class = "joueurs" src = "CSS/said.png"></td>
-                        <td><img class = "joueurs" src = "CSS/openda.png"></td>
-                        <td><img class = "joueurs" src = "CSS/sotoca.png"></td>
-                        <td><img class = "joueurs" src = "CSS/buksa.png"></td>
-                    </div>
+               
+        <div class = "role">Attaquants</div>
+            <div id="attaquants">
+                <?php
+                    $count = 0;
+                    foreach($effectif_data as $joueur => $k){
+                        if($effectif_data[$joueur]['role']=='attaquant'){
+                            afficheJoueur($effectif_data, $joueur);
+                            $count++;
+                        }
+                        if($count == 4){
+                            $count = 0;
+                            echo '</div> <div id="attaquants">';
+                            
+                        }
+                    }
+                ?>
+        </div>
 
 </body>
 
