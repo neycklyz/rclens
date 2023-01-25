@@ -23,7 +23,7 @@ if($conn){
 
 $refs = [];
 foreach($effectif_data as $joueur => $val){
-    $refs[$effectif_data[$joueur]['ref'] ] =  $effectif_data[$joueur];
+    $refs[$effectif_data[$joueur]['nom'] ] =  $effectif_data[$joueur];
 }
 
 $effectif_data = $refs;
