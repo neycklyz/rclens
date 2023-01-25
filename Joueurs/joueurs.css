@@ -7,6 +7,8 @@
     list-style: none;
 }
 
+
+
 .retour{
     position: absolute;
     top:20px;
@@ -44,6 +46,13 @@
 
 body{
     font-family: myFonts;
+}
+
+#credits{
+    position: absolute;
+    right: 0;
+    background-color: rgba(240, 248, 255, 0.321);
+    padding: 0.2em;
 }
 
 .description{

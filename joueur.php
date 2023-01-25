@@ -13,7 +13,7 @@ if($conn){
     while ($all = mysqli_fetch_array($prod)) {
         $effectif_data[] = array('role'=>$all['role'], 'prenom'=>$all['prenom'],
         'nom'=>$all['nom'], 'age'=>$all['age'], 'description'=>$all['description'], 'numero'=>$all['numero'],
-        'img'=>$all['img'], 'ref'=>$all['ref'], 'tete'=>$all['tete']); // assignment
+        'img'=>$all['img'], 'ref'=>$all['ref'], 'tete'=>$all['tete'], 'credits'=>$all['credits']); // assignment
     }
     // echo "<pre/>";var_dump($effectif_data); // print product_data array
 }else{
@@ -40,6 +40,7 @@ $ref = $_GET["ref"];
     echo 
     "<body style = background-image:url(".$effectif_data[$ref]['img'].")> 
     <div  class = 'retour'><a href='javascript:history.back()'><img class = 'fleche' src ='Joueurs/Images/fleche.png'></a></div>
+    <p id='credits'>".$effectif_data[$ref]['credits']."</p>
         <div class = 'description'>
             <p><span class = 'nom'>".$effectif_data[$ref]['prenom']." <span class='color' style = text-transform:uppercase>".$effectif_data[$ref]['nom']." </span></span><br>
             <span class = 'texte'>".$effectif_data[$ref]['description']."</span></p>
