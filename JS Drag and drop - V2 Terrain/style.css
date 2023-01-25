@@ -115,10 +115,12 @@ h1{
 .keita{
     width: 12vw;
     margin-left: -2vw;
+    cursor: grab;
     margin-top: 0.5vw;
 }
 
 .legende{
+    cursor: grab;
     width: 8vw;
 }
 

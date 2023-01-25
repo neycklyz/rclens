@@ -1,3 +1,30 @@
+<?php
+
+session_start();
+include('../effectifHelper.php');
+
+error_reporting(E_ALL); // check all errors
+ini_set('display_errors',1); // display errors
+$conn = mysqli_connect('localhost','root','','effectif');//database connection code
+
+$legendes_data = array(); // create an empty array
+
+if($conn){
+ $prod = mysqli_query($conn,"SELECT * FROM legendes");
+    while ($all = mysqli_fetch_array($prod)) {
+        $legendes_data[] = array('id'=>$all['id'], 'name'=>$all['name'],
+        'class'=>$all['class']); // assignment
+    }
+    // echo "<pre/>";var_dump($legendes_data); // print product_data array
+}else{
+
+  echo mysqli_connect_error(); // show what problem occur in database connectivity
+}
+mysqli_close($conn); // close connection
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -95,31 +122,19 @@
 
                     <div id="pointG" class="color"></div>
 
+            </div>
 
+            <div class="container1" ondragstart="start(event)"
+            ondragover="return over2(event)"
+            ondrop="return drop2(event)" ondragleave="leave2(event)">
 
-
-
-
-
-
-
-
-                    <div class="container1" ondragstart="start(event)"
-                    ondragover="return over2(event)"
-                    ondrop="return drop2(event)" ondragleave="leave2(event)">
-                        <img src="legendes/vairelles.png" class="legende" id="1" draggable="true">
-                        <img src="legendes/sikora.png" class="legende" id="2" draggable="true">
-                        <img src="legendes/moreira.png" class="legende" id="3" draggable="true">
-                        <img src="legendes/warmuz.png" class="legende" id="4" draggable="true">
-                        <img src="legendes/smicer.png" class="legende" id="5" draggable="true">
-                        <img src="legendes/boli.png" class="legende" id="6" draggable="true">
-                        <img src="legendes/varane.png" class="legende" id="7" draggable="true">
-                        <img src="legendes/keita.png" class="keita" id="8" draggable="true">
-                        <img src="legendes/foe.png" class="legende" id="9" draggable="true">
-
-                        
-                    </div>
-                </div>
+                <?php
+                    foreach($legendes_data as $legende => $k){
+                        afficheLegende($legendes_data, $legende);  
+                    }
+                ?>
+                    
+            </div>
     
                 
     </section>
