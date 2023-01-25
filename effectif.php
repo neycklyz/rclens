@@ -29,7 +29,7 @@ foreach($effectif_data as $joueur => $val){
 $effectif_data = $refs;
 
 // var_dump($refs);
-var_dump($effectif_data);
+// var_dump($effectif_data);
 
 
 mysqli_close($conn); // close connection
