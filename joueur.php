@@ -20,6 +20,14 @@ if($conn){
 
   echo mysqli_connect_error(); // show what problem occur in database connectivity
 }
+
+$refs = [];
+foreach($effectif_data as $joueur => $val){
+    $refs[$effectif_data[$joueur]['ref'] ] =  $effectif_data[$joueur];
+}
+
+$effectif_data = $refs;
+
 mysqli_close($conn); // close connection
 // echo $effectif_data[7]['prenom'];
 
@@ -42,7 +50,8 @@ $ref = $_GET["ref"];
     <div  class = 'retour'><a href='javascript:history.back()'><img class = 'fleche' src ='Joueurs/Images/fleche.png'></a></div>
     <p id='credits'>".$effectif_data[$ref]['credits']."</p>
         <div class = 'description'>
-            <p><span class = 'nom'>".$effectif_data[$ref]['prenom']." <span class='color' style = text-transform:uppercase>".$effectif_data[$ref]['nom']." </span></span><br>
+            <p><div class = 'nom'>".$effectif_data[$ref]['prenom']." <span class='color' style = text-transform:uppercase>".$effectif_data[$ref]['nom']." </span>
+            <span id = 'numero'>".$effectif_data[$ref]['numero']."</span></div><br>
             <span class = 'texte'>".$effectif_data[$ref]['description']."</span></p>
         </div>
     </body>";

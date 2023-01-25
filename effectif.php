@@ -10,7 +10,7 @@ $effectif_data = array(); // create an empty array
 
 if($conn){
  $prod = mysqli_query($conn,"SELECT * FROM joueurs");
-    while ($all = mysqli_fetch_array($prod)) {
+    while ($all = mysqli_fetch_array($prod)) {        
         $effectif_data[] = array('role'=>$all['role'], 'prenom'=>$all['prenom'],
         'nom'=>$all['nom'], 'age'=>$all['age'], 'description'=>$all['description'], 'numero'=>$all['numero'],
         'img'=>$all['img'], 'ref'=>$all['ref'], 'tete'=>$all['tete']); // assignment
@@ -20,6 +20,18 @@ if($conn){
 
   echo mysqli_connect_error(); // show what problem occur in database connectivity
 }
+
+$refs = [];
+foreach($effectif_data as $joueur => $val){
+    $refs[$effectif_data[$joueur]['ref'] ] =  $effectif_data[$joueur];
+}
+
+$effectif_data = $refs;
+
+// var_dump($refs);
+var_dump($effectif_data);
+
+
 mysqli_close($conn); // close connection
 // echo $effectif_data[7]['prenom'];
 
@@ -52,7 +64,7 @@ mysqli_close($conn); // close connection
         <div class="nav-links">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li class = "active" ><a href="effectif.html">Effectif</a></li>
+                <li class = "active" ><a href="effectif.php">Effectif</a></li>
                 <li><a href="JS Drag and drop - V2 Terrain/index.php">XI de Légendes</a></li>
             </ul>
         </div>
@@ -64,7 +76,7 @@ mysqli_close($conn); // close connection
     <div class = "role">Gardiens</div>
         <div id="gardiens">
             <?php
-            foreach($effectif_data as $joueur => $k){
+            foreach($effectif_data as $joueur => $val){
                 if($effectif_data[$joueur]['role']=='gardien'){
                     afficheJoueur($effectif_data, $joueur);  
                     }

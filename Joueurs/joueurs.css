@@ -79,7 +79,7 @@ body{
 
 .nom{
     text-align: center;
-    font-size: 7vw;
+    font-size: 5vw;
     height: auto;
     width: auto;
     z-index: 2;
@@ -89,6 +89,10 @@ body{
     margin:auto;
     color:rgb(177, 177, 177);
 
+}
+
+#numero{
+    font-size: 7vw;
 }
 
 .texte{

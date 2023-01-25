@@ -1,7 +1,7 @@
 <?php
 
-function afficheJoueur($effectif, $joueur) {
-    echo "<div><a href ='joueur.php?ref=".$joueur."'><img class = 'joueurs' src =".$effectif[$joueur]['tete']."></a></div>";
+function afficheJoueur($effectif_data, $joueur) {
+    echo "<div><a href ='joueur.php?ref=".$joueur."'><img class = 'joueurs' src =".$effectif_data[$joueur]['tete']."></a></div>";
 }
 
 function afficheLegende($tab, $legende){
