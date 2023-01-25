@@ -9,6 +9,17 @@
 
 
 
+body{
+    font-family: myFonts;
+    height: 100%;
+    background-size: 100vw;
+    background-position-x: center;
+    background-position-y: 0vh;
+    background-repeat:no-repeat;
+}
+
+
+
 .retour{
     position: absolute;
     top:20px;
@@ -44,10 +55,6 @@
     src: url(Fonts/tommy.otf);
 }
 
-body{
-    font-family: myFonts;
-}
-
 #credits{
     position: absolute;
     right: 0;
@@ -58,11 +65,9 @@ body{
 .description{
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -10vh;
     background-color: rgba(97, 97, 97, 0.95);
     backdrop-filter: blur(8px);
-    height: auto;
-    display:table;
     border-spacing: 0px;
     box-shadow: 20em;
     border-top-left-radius: 2em;
@@ -108,27 +113,6 @@ body{
 }
 
 
-
-
-
-
-
-/*///////////////////////////// SAMBA ////////////////////////////////////*/
-
-
-
-
-
-/*///////////////////////////// MEDINA ////////////////////////////////////*/
-
-body{
-    font-family: myFonts;
-    height: 100%;
-    background-size: 100vw;
-    background-position-x: center;
-    background-position-y: 0vh;
-    background-repeat:no-repeat;
-}
 
 
 
