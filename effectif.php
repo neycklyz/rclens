@@ -72,7 +72,7 @@ mysqli_close($conn); // close connection
     </nav>
        
                 
-                   
+    <div class="tab">            
     <div class = "role">Gardiens</div>
         <div id="gardiens">
             <?php
@@ -137,6 +137,7 @@ mysqli_close($conn); // close connection
                     }
                 ?>
         </div>
+        </div>  
 
 </body>
 
