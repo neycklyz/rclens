@@ -137,7 +137,7 @@ mysqli_close($conn); // close connection
                     }
                 ?>
         </div>
-        </div>  
+    </div>  
 
 </body>
 
