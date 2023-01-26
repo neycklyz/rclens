@@ -36,7 +36,7 @@ mysqli_close($conn); // close connection
     <link rel="stylesheet" href="style.css">
     <title>Drag and drop</title>
 </head>
-<body id="capture">
+<body>
 <h1>RC LENS LEGENDS</h1>
 <img src="img/blason.svg" alt="blason" id="blason"> 
 <div><img src="img/terrain.svg" alt="terrain" id="terrain"></div>
@@ -44,7 +44,7 @@ mysqli_close($conn); // close connection
     <button onClick="window.location.reload()" id="refresh"><img src="../CSS/refresh.svg" alt="refresh"></button>
     <section id="zone">
             <div class="container2">
-                
+
                 <div ondragover="return over(event)"
                 ondrop="return drop(event)" ondragleave="leave(event)" 
                 ondragstart="start(event)" id="BU1"></div>
@@ -136,7 +136,7 @@ mysqli_close($conn); // close connection
                     
             </div>
     
-                
     </section>
+
 </body>
 </html>
