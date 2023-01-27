@@ -65,8 +65,7 @@ body{
 
 .description{
     width: 100%;
-    position: absolute;
-    bottom: -10vh;
+    margin-top: 70vh;
     background-color: rgba(97, 97, 97, 0.95);
     backdrop-filter: blur(8px);
     border-spacing: 0px;
@@ -98,7 +97,7 @@ body{
 
 .texte{
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.7vw;
     color:rgb(177, 177, 177);
     height: auto;
     display: table-cell;
@@ -132,8 +131,7 @@ body{
         font-size: 12vw;
     }
     .description{
-        position: relative;
-        margin-top: 70vh;
+        margin-top: 30vh;
     }
     .texte{
         font-size: 5vw;
