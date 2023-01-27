@@ -1,5 +1,12 @@
 /* ALL */
 
+:root{
+    --main-color: rgba(97, 97, 97);
+    --second-color:rgb(177, 177, 177);
+    --main-gradient: -webkit-linear-gradient(2.20turn, rgb(253, 0, 0), rgb(255, 221, 0));
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -23,13 +30,13 @@ body{
 
 .retour{
     position: absolute;
-    top:20px;
-    left:20px;
+    top:0;
+    left:0;
     height:auto;
     width:auto;
-    background-color: rgb(193, 193, 193);
+    background-color: var(--second-color);
     box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
-    border-radius: 1em;
+    border-bottom-right-radius: 1em;
     display: table;
 }
 
@@ -58,15 +65,18 @@ body{
 
 #credits{
     position: absolute;
+    border-bottom-left-radius: 0.6rem;
+    top: 0;
     right: 0;
-    background-color: rgba(240, 248, 255, 0.321);
-    padding: 0.2em;
+    opacity: 40%;
+    background-color: var(--main-color);
+    padding: 0.4em;
 }
 
 .description{
     width: 100%;
     margin-top: 70vh;
-    background-color: rgba(97, 97, 97, 0.95);
+    background-color: var(--main-color);
     backdrop-filter: blur(8px);
     border-spacing: 0px;
     box-shadow: 20em;
