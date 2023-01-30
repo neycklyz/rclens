@@ -68,7 +68,6 @@ body{
     border-bottom-left-radius: 0.6rem;
     top: 0;
     right: 0;
-    opacity: 40%;
     background-color: var(--main-color);
     padding: 0.4em;
 }
@@ -139,6 +138,7 @@ body{
     }
     .color{
         font-size: 12vw;
+        margin-top: -1rem;
     }
     .description{
         margin-top: 60vh;
@@ -165,6 +165,7 @@ body{
     }
     .color{
         font-size: 15vw;
+        margin-top: -1rem;
     }
     .description{
         position: relative;

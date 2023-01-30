@@ -93,49 +93,34 @@ mysqli_close($conn); // close connection
                         afficheJoueur($effectif_data, $joueur);
                         $count++;
                     }
-                    if($count == 4){
-                        $count = 0;
-                        echo '</div> <div id="defenseurs">';
-                        
-                    }
-                }
+                }  
             ?>
         </div>
 
-        <div class = "role">Milieux</div>
-            <div id="milieux">
-                <?php
-                    $count = 0;
-                    foreach($effectif_data as $joueur => $k){
-                        if($effectif_data[$joueur]['role']=='milieu'){
-                            afficheJoueur($effectif_data, $joueur);
-                            $count++;
-                        }
-                        if($count == 4){
-                            $count = 0;
-                            echo '</div> <div id="milieux">';
-                            
-                        }
+    <div class = "role">Milieux</div>
+        <div id="milieux">
+            <?php
+                $count = 0;
+                foreach($effectif_data as $joueur => $k){
+                    if($effectif_data[$joueur]['role']=='milieu'){
+                        afficheJoueur($effectif_data, $joueur);
+                        $count++;
                     }
-                ?>
-        </div>
+                }
+            ?>
+    </div>
                
-        <div class = "role">Attaquants</div>
-            <div id="attaquants">
-                <?php
-                    $count = 0;
-                    foreach($effectif_data as $joueur => $k){
-                        if($effectif_data[$joueur]['role']=='attaquant'){
-                            afficheJoueur($effectif_data, $joueur);
-                            $count++;
-                        }
-                        if($count == 4){
-                            $count = 0;
-                            echo '</div> <div id="attaquants">';
-                            
-                        }
+    <div class = "role">Attaquants</div>
+        <div id="attaquants">
+            <?php
+                $count = 0;
+                foreach($effectif_data as $joueur => $k){
+                    if($effectif_data[$joueur]['role']=='attaquant'){
+                        afficheJoueur($effectif_data, $joueur);
+                        $count++;
                     }
-                ?>
+                }
+            ?>
         </div>
     </div>  
 

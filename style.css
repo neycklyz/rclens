@@ -546,6 +546,7 @@ footer p{
   margin-top: 25px;
   margin: 0 auto;
   margin-bottom: 25px;
+  padding-bottom: 2rem;
 }
 
 #gardiens, #defenseurs, #milieux, #attaquants{
@@ -555,7 +556,13 @@ footer p{
   margin: 0 auto;
   margin-bottom: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+#gardiens div, #defenseurs div, #milieux div, #attaquants div{
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
 }
 
 .joueurs{
@@ -581,13 +588,13 @@ footer p{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
+  #gardiens, #defenseurs, #milieux, #attaquants{
+    justify-content: flex-start;
+  }
   .tab{
     width: 30rem;
     z-index: 9999;
-  }
-  .joueurs{
-    width:70px;
   }
   .categorie{
     font-size: 2em;
@@ -598,10 +605,10 @@ footer p{
 
 /*//////////////// EFFECTIF RESPONSIVE ///////////////////*/
 
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){
 
   .tab{
-    width:100vw;
+    max-width: 30rem;
   }
   .joueurs{
     width: 20vw;
@@ -611,6 +618,6 @@ footer p{
   }
   .joueurs:hover{
     width:80%;
-  }
+  } 
 
-}
+}*/
