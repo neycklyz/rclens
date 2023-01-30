@@ -506,6 +506,11 @@ footer p{
 }
 
 @media screen and (max-width: 800px){
+  .nav-links ul li a::before, .nav-links ul li a::after{
+    content: "";
+    display: none;
+  
+  }
   header{
     height: 100vh;
     display: flex;
@@ -599,7 +604,6 @@ footer p{
   .categorie{
     font-size: 2em;
   }
-
 }
 
 
