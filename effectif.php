@@ -64,8 +64,9 @@ mysqli_close($conn); // close connection
         <div class="nav-links">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li class = "active" ><a href="effectif.php">Effectif</a></li>
+                <li><a href="effectif.php">Effectif</a></li>
                 <li><a href="JS Drag and drop - V2 Terrain/index.php">XI de Légendes</a></li>
+                <li><a href="quiz.php">Quiz</a></li>
             </ul>
         </div>
         <img src = "CSS/menu.png" class = "menu-hamburger">

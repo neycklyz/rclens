@@ -625,3 +625,50 @@ footer p{
   } 
 
 }*/
+
+
+/* /////////////////// quiz ///////////////////// */
+
+form{
+  width: 70%;
+  height: 100vh;
+  margin-inline: auto;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 7rem;
+}
+  
+fieldset{
+  color: var(--second-color);
+  border: none;
+}
+
+h1{
+  padding: 1rem;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#reponse{
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.submitbtn{
+  border: none;
+  margin-left: 20%;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: myFonts;
+  cursor: pointer;
+}
+
+
+
