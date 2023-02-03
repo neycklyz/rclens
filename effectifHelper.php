@@ -10,12 +10,13 @@ function afficheLegende($tab, $legende){
 }
 
 function afficheQuestion($quiz_data, $question){
+   
     echo "<ol>
     <li>
-        <h3>".$quiz_data[$question]['question']."</h3>
+        <h3>".$quiz_data[$question]['quest']."</h3>
         <div id='reponse'>
             <input type='radio' name='question-1-answers' id='question-1-answers-A' value='A' />
-            <label for='question-1-answers-A'>A)".$quiz_data[$question]['reponseA']."</label>
+            <label for='question-1-answers-A'>A) ".$quiz_data[$question]['reponseA']."</label>
         </div>
         
         <div id='reponse'>
@@ -35,11 +36,8 @@ function afficheQuestion($quiz_data, $question){
     </li>
 </ol>
 
-<input type='submit' value='Submit' class='submitbtn' />";
+<input type='submit' value='Submit' name='submit' class='submitbtn' />";
 
 }
-
-
-
 
 ?>

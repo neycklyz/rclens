@@ -12,7 +12,7 @@ $quiz_data = array(); // create an empty array
 if($conn){
  $prod = mysqli_query($conn,"SELECT * FROM quiz");
     while ($all = mysqli_fetch_array($prod)) {        
-        $quiz_data[] = array('id'=>$all['id'], 'question'=>$all['question'], 'reponseA'=>$all['reponseA'],
+        $quiz_data[] = array('id'=>$all['id'], 'quest'=>$all['question'], 'reponseA'=>$all['reponseA'],
         'reponseB'=>$all['reponseB'], 'reponseC'=>$all['reponseC'], 'reponseD'=>$all['reponseD'], 'bonnereponse'=>$all['bonnereponse']);
     }
 }else{
@@ -21,8 +21,8 @@ if($conn){
 }
 
 $num = [];
-foreach($quiz_data as $question => $val){
-    $num[$quiz_data[$question]['id']] =  $quiz_data[$question];
+foreach($quiz_data as $quest => $val){
+    $num[$quiz_data[$quest]['id']] =  $quiz_data[$quest];
 }
 
 $quiz_data = $num;
@@ -68,11 +68,60 @@ $quiz_data = $num;
 		<h1>Connais-tu <span style="text-transform: uppercase;">vraiment</span> le Racing ?</h1>
 
             <?php
-            if(isset($_POST['nouvelle-question'])){
-                $affiche=rand(1,2);
-                mysqli_query($conn, "SELECT * FROM quiz WHERE id='$question'");
-                echo afficheQuestion($quiz_data, $affiche);
+
+           
+            $tab = [];
+            $count = 0;
+            foreach($quiz_data as $q){
+                $count++;
+                $tab[] = $count;
             }
+            
+            $question = rand(1, count($tab));
+                         
+            if(isset($_POST['nouvelle-question'])){
+                $_SESSION['q'] = $question;
+                echo afficheQuestion($quiz_data, $question);
+            }
+
+            $bonne = $quiz_data[$_SESSION['q']]['bonnereponse'];
+           
+
+            
+            // $v = 0;
+            // $f = 0;
+            // $_SESSION['v'] = $v;
+            // $_SESSION['f'] = $f;
+
+
+            if(isset($_POST['submit'])){
+                if($_POST['question-1-answers'] == $bonne){
+                    echo "<div>Bonne réponse !</div>";
+                    // $v++;
+                }else{
+                    echo "<div>Mauvaise réponse...</div>";
+                    // $f++;
+                }
+                // echo afficheScore($v, $f);
+            }
+            
+            // function afficheScore($v, $f){
+            
+            //     $total = $v + $f;
+            //     if($total !=0){
+            //         $score = 100*$v/$total;
+            //         echo $score."%";
+            //         }
+            //     }
+            // if(isset($_POST['nouvelle-question'])){
+            //     $affiche = rand(1,2);
+            //     for($i=0;$i<count($tab);$i++){
+            //         if($tab[$i] == $affiche){
+            //             echo afficheQuestion($quiz_data, $tab[$i]);
+            //             unset($tab[$i]);
+            //         }
+            //     }
+            // }
             mysqli_close($conn);
             ?>
 
