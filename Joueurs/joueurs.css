@@ -35,7 +35,7 @@ body{
     height:auto;
     width:auto;
     background-color: var(--second-color);
-    box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.507);
     border-bottom-right-radius: 1em;
     display: table;
 }
@@ -68,8 +68,9 @@ body{
     border-bottom-left-radius: 0.6rem;
     top: 0;
     right: 0;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     padding: 0.4em;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.507);
 }
 
 .description{

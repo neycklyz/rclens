@@ -69,44 +69,48 @@ $quiz_data = $num;
 
             <?php
 
-           
             $tab = [];
-            $count = 0;
+            $count = 1;
             foreach($quiz_data as $q){
-                $count++;
                 $tab[] = $count;
+                $count++;
             }
             
-            $question = rand(1, count($tab));
-                         
+            $random = range(1, count($tab));
+            shuffle($random);
+
+            $question = $random[0];
+            
             if(isset($_POST['nouvelle-question'])){
                 $_SESSION['q'] = $question;
-                echo afficheQuestion($quiz_data, $question);
+                echo afficheQuestion($quiz_data, $_SESSION['q']);
             }
 
             $bonne = $quiz_data[$_SESSION['q']]['bonnereponse'];
            
+            if(isset($_POST['submit'])){
+                if(isset($_POST['question-1-answers'])){
+                    if($_POST['question-1-answers'] == $bonne){
+                        echo "<div>Bonne réponse !</div>";
+                        // $v++;
+                    }
+                    else{
+                        echo "<div>Mauvaise réponse...</div>";
+                        // $f++;
+                    }
+                }else{
+                    echo "Veuillez sélectionner une réponse";
+                }
+            }
+         
+                
 
-            
             // $v = 0;
             // $f = 0;
             // $_SESSION['v'] = $v;
             // $_SESSION['f'] = $f;
-
-
-            if(isset($_POST['submit'])){
-                if($_POST['question-1-answers'] == $bonne){
-                    echo "<div>Bonne réponse !</div>";
-                    // $v++;
-                }else{
-                    echo "<div>Mauvaise réponse...</div>";
-                    // $f++;
-                }
-                // echo afficheScore($v, $f);
-            }
-            
+            // echo afficheScore($v, $f);
             // function afficheScore($v, $f){
-            
             //     $total = $v + $f;
             //     if($total !=0){
             //         $score = 100*$v/$total;
