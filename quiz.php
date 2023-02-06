@@ -104,11 +104,9 @@ $quiz_data = $num;
                         // $f++;
                     }
                 }else{
-                    echo "Veuillez sélectionner une réponse";
+                    echo "Aucune réponse sélectionnée...";
                 }
             }
-         
-                
 
             // $v = 0;
             // $f = 0;
@@ -131,6 +129,7 @@ $quiz_data = $num;
             //         }
             //     }
             // }
+
             mysqli_close($conn);
             ?>
 
