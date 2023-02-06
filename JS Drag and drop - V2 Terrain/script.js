@@ -32,4 +32,18 @@ function over2(e){
     return false;
 }
 
+// Navbar Scroll
+
+function scrollValue() {
+    var navbar = document.getElementById('nav-accueil');
+    var scroll = window.scrollY;
+        if (scroll < 100) {
+            navbar.classList.remove('bgcolor');
+        } else {
+            navbar.classList.add('bgcolor');
+        }
+    }
+
+    window.addEventListener('scroll', scrollValue);
+
 
