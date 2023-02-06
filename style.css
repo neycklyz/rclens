@@ -136,8 +136,15 @@ body{
 } */
 
 
+.navbar #edr{
+  display: flex;
+}
 
 
+#edrlogo{
+  width: 8rem;
+  align-self: center;
+}
 
 
 .navbar .blason{
@@ -177,6 +184,9 @@ body{
   }
   .navbar .blason{
     width: 10vw;
+  }
+  #edrlogo{
+    width: 30vw;
   }
   .navbar .nav-links{
     top: 0;
@@ -243,7 +253,7 @@ header{
 
 
 .titre{
-  font-size: 8rem;
+  font-size: 5vw;
   color: var(--second-color);
   text-shadow: 0 0 0.3em #edcf656e;
   position: relative;
