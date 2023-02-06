@@ -64,7 +64,7 @@ $quiz_data = $num;
                     </ul>
                 </div>
             <img src = "CSS/menu.png" class = "menu-hamburger">
-            <div id="officiel"><a href="https://www.rclens.fr/fr">
+            <div id="officiel"><a href="https://www.rclens.fr/fr" target="_blank">
                 <p>Site officiel du Racing Club de Lens</p>
                 <img src="CSS/blason.svg" style="width:2rem;" alt=""></a></div>
         </nav>
@@ -137,9 +137,16 @@ $quiz_data = $num;
                 value="Nouvelle question" class="submitbtn"/>
 		
 		</form>
-	
- 
- 
+
+        <footer>
+            <div class="footer-logos">
+                <p class="footer-text">Retrouvez moi sur les réseaux sociaux</p>
+                <a href="https://www.instagram.com/neycklyz" target="_blank"><img src="CSS/insta.svg" alt="instagram" id="insta"></a>
+                <a href="https://twitter.com/neycklyz" target="_blank"><img src="CSS/twitter.svg" alt="twitter" id="twitter"></a>
+                <p id="arobase">@neycklyz</p>
+            </div>
+        </footer>
+
 </body>
  
 </html>

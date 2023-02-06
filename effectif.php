@@ -71,7 +71,7 @@ mysqli_close($conn); // close connection
                     </ul>
                 </div>
             <img src = "CSS/menu.png" class = "menu-hamburger">
-            <div id="officiel"><a href="https://www.rclens.fr/fr">
+            <div id="officiel"><a href="https://www.rclens.fr/fr" target="_blank">
                 <p>Site officiel du Racing Club de Lens</p>
                 <img src="CSS/blason.svg" style="width:2rem;" alt=""></a></div>
         </nav>
@@ -127,9 +127,22 @@ mysqli_close($conn); // close connection
                 }
             ?>
         </div>
-    </div>  
+    </div>
+    <footer>
+
+        <div>
+            <p class="footer-text">Retrouvez moi sur les réseaux sociaux</p>
+        </div>
+        <div class="footer-logos">
+            <a href="https://www.instagram.com/neycklyz" target="_blank"><img src="CSS/insta.svg" alt="instagram" id="insta"></a>
+            <a href="https://twitter.com/neycklyz" target="_blank"><img src="CSS/twitter.svg" alt="twitter" id="twitter"></a>
+            <p id="arobase">@neycklyz</p>
+        </div>
+
+    </footer>
 
 </body>
+
 
         <script>
             const menuHamburger = document.querySelector(".menu-hamburger")
