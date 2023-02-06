@@ -1,6 +1,5 @@
 <?php
 
-
 function afficheJoueur($effectif_data, $joueur) {
     echo "<div><a href ='joueur.php?ref=".$joueur."'><img class = 'joueurs' src =".$effectif_data[$joueur]['tete']."></a></div>";
 }

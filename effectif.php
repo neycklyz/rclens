@@ -59,18 +59,22 @@ mysqli_close($conn); // close connection
     
 <body>
 
-    <nav class="navbar">
-        <a href = "index.html"><img src="CSS/blason.svg" class = "blason"></a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="effectif.php">Effectif</a></li>
-                <li><a href="JS Drag and drop - V2 Terrain/index.php">XI de Légendes</a></li>
-                <li><a href="quiz.php">Quiz</a></li>
-            </ul>
-        </div>
-        <img src = "CSS/menu.png" class = "menu-hamburger">
-    </nav>
+        <nav class="navbar" id = "nav-accueil">
+            <a href = "index.html" id="edr">
+            <img src="CSS/edr.png" id="edrlogo" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="effectif.php">Effectif</a></li>
+                        <li><a href="JS Drag and drop - V2 Terrain/index.php">XI de Légendes</a></li>
+                        <li><a href="quiz.php">Quiz</a></li>
+                    </ul>
+                </div>
+            <img src = "CSS/menu.png" class = "menu-hamburger">
+            <div id="officiel"><a href="https://www.rclens.fr/fr">
+                <p>Site officiel du Racing Club de Lens</p>
+                <img src="CSS/blason.svg" style="width:2rem;" alt=""></a></div>
+        </nav>
        
                 
     <div class="tab">            

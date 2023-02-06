@@ -51,8 +51,10 @@ $quiz_data = $num;
     <script src="script.js"></script>
 </head>
     <body id = "body-accueil">
-    <nav class="navbar" id = "nav-accueil">
-            <a href = "index.html"><img src="CSS/blason.svg" class = "blason"></a>
+
+        <nav class="navbar" id = "nav-accueil">
+            <a href = "index.html" id="edr">
+            <img src="CSS/edr.png" id="edrlogo" alt="logo"></a>
                 <div class="nav-links">
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
@@ -62,6 +64,9 @@ $quiz_data = $num;
                     </ul>
                 </div>
             <img src = "CSS/menu.png" class = "menu-hamburger">
+            <div id="officiel"><a href="https://www.rclens.fr/fr">
+                <p>Site officiel du Racing Club de Lens</p>
+                <img src="CSS/blason.svg" style="width:2rem;" alt=""></a></div>
         </nav>
      
 		<form action="quiz.php" method="post" id="quiz">

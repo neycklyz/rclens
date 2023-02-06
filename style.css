@@ -36,13 +36,13 @@ body{
 
 .navbar{
   position: sticky;
-  top:0;
+  top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   box-sizing: border-box;
   align-items: center;
-  padding:1em;
+  padding: 1em;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   background: linear-gradient(-45deg, var(--second-color), var(--fourth-color));
 	background-size: 400% 400%;
@@ -136,16 +136,33 @@ body{
 } */
 
 
-.navbar #edr{
-  display: flex;
-}
-
 
 #edrlogo{
   width: 8rem;
-  align-self: center;
 }
 
+#officiel{
+  position: relative ;
+  width: 8rem;
+}
+
+#officiel a p{
+  position: absolute;
+  opacity: 0;
+}
+
+#officiel a:hover p{
+  opacity: 100%;
+  top: 15px;
+  left: 0;
+  height: 2.5em;
+  background-color: var(--fourth-color);
+  padding: 1em;
+  border-radius: 1em;
+  width: 10em;
+  font-size: 1em;
+  transition: ease-in 0.1s;
+}
 
 .navbar .blason{
   width: 3em;
@@ -157,17 +174,11 @@ body{
 
 .navbar .nav-links ul {
   display: flex;
-  padding-left:75px;
 }
 
-.navbar .nav-links{
-  display: flex;
-  align-items: center;
-}
 
 .navbar .nav-links ul li{
   margin: 0 25px;
-  display: flex;
 }
 
 .menu-hamburger{
@@ -641,7 +652,6 @@ footer p{
 
 form{
   width: 70%;
-  height: 100vh;
   margin-inline: auto;
   border: none;
   outline: none;
