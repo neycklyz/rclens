@@ -68,7 +68,8 @@ $quiz_data = $num;
                 <p>Site officiel du Racing Club de Lens</p>
                 <img src="CSS/blason.svg" style="width:2rem;" alt=""></a></div>
         </nav>
-     
+        
+        <div id="quiz">
 		<form action="quiz.php" method="post" id="quiz">
 		<h1>Connais-tu <span style="text-transform: uppercase;">vraiment</span> le Racing ?</h1>
 
@@ -137,6 +138,7 @@ $quiz_data = $num;
                 value="Nouvelle question" class="submitbtn"/>
 		
 		</form>
+        </div>
 
         <footer>
             <div class="footer-logos">
@@ -148,5 +150,13 @@ $quiz_data = $num;
         </footer>
 
 </body>
+<script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
  
 </html>

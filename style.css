@@ -32,7 +32,13 @@ body{
 }
 
 
+
+
+
+
+/*/////////////////////////////////////////////////*/
 /* //////////////////// NAV ////////////////////// */
+/*/////////////////////////////////////////////////*/
 
 .bgcolor{
   transition: ease-in-out 0.2s;
@@ -48,10 +54,6 @@ body{
   box-sizing: border-box;
   align-items: center;
   padding: 1em;
-  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(-45deg, var(--second-color), var(--fourth-color)); */
-	/* background-size: 400% 400%; */
-	/* animation: gradient 10s ease infinite; */
   z-index: 1;
 }
 
@@ -104,7 +106,6 @@ body{
 
 }
 
-
 .navbar .nav-links ul li a:hover::before{
   content: "";
   width: 100%;
@@ -114,33 +115,6 @@ body{
   font-weight: 600;
   position: relative;
 }
-
-/* .navbar .nav-links ul li.active a::before{
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--main-color);
-  height: 0.2rem;
-  width: 100%;
-
-}
-
-.navbar .nav-links ul li.active a::after{
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--main-color);
-  height: 0.2rem;
-  width: 100%;
-} */
-
-
 
 #edrlogo{
   width: 8rem;
@@ -187,6 +161,7 @@ body{
 }
 
 .menu-hamburger{
+
   width: 50px;
   position: absolute;
   right: 30px;
@@ -194,10 +169,12 @@ body{
   cursor: pointer;
 }
 
-
-
+/* MEDIA QUERY NAV */
 
 @media screen and (max-width:800px){
+  #edrlogo{
+    filter: invert(100%);
+  }
   .navbar{
     justify-content: space-between;
     padding: 10px;
@@ -222,16 +199,17 @@ body{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(8px);
-
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -100%; 
-    
   }
-
+  .nav-links ul li a::before, .nav-links ul li a::after{
+    content: "";
+    display: none;
+  }
   .nav-links.mobile-menu{
     margin-left: 0;
   }
@@ -247,6 +225,7 @@ body{
   .navbar .nav-links ul li{
     margin: 25px 0;
     font-size: 1.2em;
+    
   }
   .navbar .menu-hamburger{
     position: absolute;
@@ -254,10 +233,19 @@ body{
     display: block;
     width: 13vw;
   }
+  .navbar a{
+    color: black;
+  }
 }
 
 
-/*////////////////////// ACCUEIL //////////////////////////////////////////////*/
+
+
+
+
+/*//////////////////////////////////////////////////////////*/
+/*////////////////////// ACCUEIL ///////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 
 header{
   height: 100vh;
@@ -267,18 +255,6 @@ header{
   place-items: center;
   margin-top: -4vh;
 }
-
-
-/* #text-accueil{
-  display: none;
-  font-size: 6rem;
-  width:100vw;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 2em;
-  padding-top: 1.5em;
-} */
-
 
 .titre{
   font-size: 5vw;
@@ -331,7 +307,7 @@ header{
   height: auto;
   padding-top: 15rem;
   max-width: 1300px;
-  margin-inline: auto;
+  margin: 0 auto;
   margin-bottom: 8rem;
 }
 
@@ -375,90 +351,39 @@ header{
   width: 5rem;
 }
 
+/* MEDIA QUERY ACCUEIL */
 
-
-/* #text-accueil p :nth-child(1){
-  color:black;
-  animation: slidein2 1s none 0ms;
-}
-
-#text-accueil p :nth-child(2){
-  color:rgb(255, 0, 0);
-  animation: slidein2 1.2s none 0ms;
-
-}
-
-#text-accueil p :nth-child(3){
-  color:rgb(255, 221, 0);
-  animation: slidein2 1.4s none 0ms;
-
-} */
-
-/* 
-@keyframes slidein2 {
-  from {
-    display: block;
-    opacity: 0%;
-    margin-left: 5%;
-    width: 300%;
+@media screen and (max-width:1000px){
+  .titre{
+    display: none;
   }
-
-  to {
-    display: flex;
-    margin-left: 0%;
-    width: 100%;
+  .portfolio{
+    flex-direction: column;
   }
-} */
-
-/*/////////////////////// ANIM TEL /////////////////////////////////*/
-
-/*
-.animtel1 {
-  animation-duration: 1s;
-  animation-name: slideintel;
-  animation-delay: 0ms;
-}
-
-.animtel2 {
-  animation-duration: 1.2s;
-  animation-name: slideintel;
-  animation-delay: 0ms;
-}
-
-.animtel3 {
-  animation-duration: 1.4s;
-  animation-name: slideintel;
-  animation-delay: 0ms;
-}
-
-.animtel4 {
-  animation-duration: 1.6s;
-  animation-name: slideintel;
-  animation-delay: 0ms;
-
-}.animtel5 {
-  animation-duration: 1.8s;
-  animation-name: slideintel;
-  animation-delay: 0ms;
+  .categorie{
+    background-color: var(--fourth-color);
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  #explication{
+    color: var(--fourth-color);
+  }
+  #presentation h1{
+    color: var(--fourth-color);
+    text-shadow: 0 0 0.8em var(--fourth-color);
+  }
 }
 
 
-@keyframes slideintel {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-*/
 
 
 
 
-/*//////////////////////////////////////////////////////////////////*/
-
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////// MAIN ////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 
 .main-accueil{
-  /* -webkit-box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4);  */
-  /* box-shadow: 0px 16px 46px 29px rgba(0,0,0,0.4); */
   height: 100vh;
   width: 100%;
   background-color: var(--main-color);
@@ -493,6 +418,13 @@ header{
 }
 
 
+
+
+
+
+/*//////////////////////////////////////////////////////////*/
+/*////////////////////// FOOTER ///////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 
 footer{
   display: flex;
@@ -550,19 +482,13 @@ footer p{
 
 }
 
+/* MEDIA QUERY FOOTER */
+
 @media screen and (max-width: 800px){
-  .nav-links ul li a::before, .nav-links ul li a::after{
-    content: "";
-    display: none;
-  
-  }
   header{
     height: 100vh;
     display: flex;
     justify-content: center;
-  }
-  .titre{
-    display: none;
   }
   #text-accueil-mobile{
     display: flex;
@@ -586,12 +512,17 @@ footer p{
   }
 }
 
+
+
+
+
+
 /*///////////////////////////////////////////////////////*/
 /*////////////////////// EFFECTIF ///////////////////////*/
 /*///////////////////////////////////////////////////////*/
 
 .tab{
-  max-width: 1000px;
+  max-width: 50rem;
   text-align: center;
   margin-top: 25px;
   margin: 0 auto;
@@ -617,6 +548,7 @@ footer p{
 
 .joueurs{
   width: 100px;
+  margin: 1rem;
   border-radius: 1.2em;
   background-color: var(--second-color);
   text-align: center;
@@ -637,14 +569,14 @@ footer p{
   text-align: center;
 }
 
+/* MEDIA QUERY EFFECTIF */
 
 @media screen and (max-width:900px){
   #gardiens, #defenseurs, #milieux, #attaquants{
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .tab{
     width: 30rem;
-    z-index: 9999;
   }
   .categorie{
     font-size: 2em;
@@ -652,36 +584,24 @@ footer p{
 }
 
 
-/*//////////////// EFFECTIF RESPONSIVE ///////////////////*/
-
-/* @media screen and (max-width:480px){
-
-  .tab{
-    max-width: 30rem;
-  }
-  .joueurs{
-    width: 20vw;
-  }
-  .categorie{
-    font-size: 10vw;
-  }
-  .joueurs:hover{
-    width:80%;
-  } 
-
-}*/
 
 
-/* /////////////////// quiz ///////////////////// */
+
+
+/*//////////////////////////////////////////////////////////*/
+/*/////////////////////// QUIZ /////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+#quiz{
+  margin: 20vh auto;
+}
 
 form{
   width: 70%;
   height: 100vh;
-  margin-inline: auto;
   border: none;
   outline: none;
   color: var(--second-color);
-  margin-top: 7rem;
 }
   
 fieldset{
@@ -715,6 +635,3 @@ h3{
   font-family: myFonts;
   cursor: pointer;
 }
-
-
-
