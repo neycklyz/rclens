@@ -221,9 +221,8 @@ body{
     padding-top: 70vh;
     align-items: center;
     background-color: var(--fifth-color);
-    width: 25vh;
+    width: 100%;
     position: inherit;
-    right: 0;
     height: 100vh;
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.281);
   }
@@ -234,7 +233,7 @@ body{
   }
   .navbar .menu-hamburger{
     position: absolute;
-    right:10px;
+    right: 10px;
     display: block;
     width: 13vw;
   }
