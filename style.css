@@ -138,6 +138,7 @@ body{
 #officiel a p{
   position: absolute;
   opacity: 0;
+  color: var(--second-color);
   cursor: default;
 }
 
@@ -146,7 +147,7 @@ body{
   top: 45px;
   left: -10px;
   height: 2.5em;
-  background-color: var(--fourth-color);
+  background-color: var(--fifth-color);
   padding: 1em;
   border-radius: 1em;
   width: 10em;

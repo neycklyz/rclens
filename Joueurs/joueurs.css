@@ -3,6 +3,8 @@
 :root{
     --main-color: rgba(97, 97, 97);
     --second-color:rgb(177, 177, 177);
+    --third-color: #616161;
+    --fifth-color: #222222;
     --main-gradient: -webkit-linear-gradient(2.20turn, rgb(253, 0, 0), rgb(255, 221, 0));
 }
 
@@ -72,7 +74,7 @@ body{
 .description{
     width: 100%;
     margin-top: 70vh;
-    background-color: var(--main-color);
+    background-color: var(--fifth-color);
     backdrop-filter: blur(8px);
     border-spacing: 0px;
     box-shadow: 20em;
@@ -90,21 +92,22 @@ body{
     width: auto;
     z-index: 2;
     display: block;
-    padding:4vh;
+    padding:5vh;
     margin-top: auto;
-    margin:auto;
-    color:rgb(177, 177, 177);
+    margin: auto;
+    color: var(--third-color);
 
 }
 
 #numero{
     font-size: 6vw;
+    color: var(--third-color);
 }
 
 .texte{
     text-align: left;
     font-size: 1.7vw;
-    color:rgb(177, 177, 177);
+    color: var(--third-color);
     height: auto;
     display: table-cell;
     padding-left: 4vh;
@@ -119,7 +122,6 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 8vw;
-    
 }
 
 @media screen and (max-width:1400px){
