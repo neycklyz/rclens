@@ -43,6 +43,7 @@ h1{
     position: absolute;
     top:49vw;
     left: -5.5vw;
+    margin-bottom: 30rem;
 }
 
 #terrain{
@@ -61,7 +62,64 @@ h1{
     opacity: 60%;
 }
 
-.html2canvas-container { width: 3000px !important; height: 3000px !important; }
+.color{
+    background: linear-gradient(63deg, rgba(255,0,0,1) 0%, rgba(255,230,0,1) 97%);
+}
+
+.fleche{
+    position: relative;
+    width: 8vw;
+    vertical-align:center;
+    filter: invert(50%);
+}
+
+.retour{
+    position: absolute;
+    top:0;
+    left:0;
+    height:auto;
+    width:auto;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
+    border-bottom-right-radius: 2rem;
+    display: table;
+}
+
+#refresh{
+    position: absolute;
+    right: 4rem;
+    top: 93vw;
+    height: 6vw;
+    width: 6vw;
+    border-radius: 100%;
+    color: white;
+    background-color: red;
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.658);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: myFonts;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+#refresh:hover{
+    transition: ease-in 0.3s;
+    box-shadow: 0 0 3rem red;
+}
+
+#refresh img{
+    position: relative;
+    top: 0.1em;
+    width: 3vw;
+    transition: 0.5s;
+}
+
+#refresh img:hover{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
 
 /*---------------------------------------
 --------------DRAG AND DROP--------------
@@ -419,63 +477,7 @@ h1{
     
 }
 
-.color{
-    background: linear-gradient(63deg, rgba(255,0,0,1) 0%, rgba(255,230,0,1) 97%);
-}
 
-.fleche{
-    position: relative;
-    width: 8vw;
-    vertical-align:center;
-}
-
-.retour{
-    position: absolute;
-    top:20px;
-    left:20px;
-    height:auto;
-    width:auto;
-    background-color: rgb(193, 193, 193);
-    box-shadow: 3px 5px 10px rgb(0,0,0,0.4);
-    border-radius: 1em;
-    display: table;
-}
-
-#refresh{
-    position: absolute;
-    right: 4rem;
-    top: 93vw;
-    height: 6vw;
-    width: 6vw;
-    border-radius: 100%;
-    color: white;
-    background-color: red;
-    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.658);
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: myFonts;
-    z-index: 99;
-    transition: 0.3s;
-}
-
-#refresh:hover{
-    transition: ease-in 0.3s;
-    box-shadow: 0 0 3rem red;
-}
-
-#refresh img{
-    position: relative;
-    top: 0.1em;
-    width: 3vw;
-    transition: 0.5s;
-}
-
-#refresh img:hover{
-    transform: rotate(180deg);
-    transition: 0.5s;
-}
 
 /*//////////////////////////////////////
 //////////////RESPONSIVE////////////////

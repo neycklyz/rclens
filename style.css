@@ -433,7 +433,10 @@ footer{
   justify-content: space-between;
   background-color: var(--fifth-color);
   height: 8rem;
-  padding: 2em;
+  padding-top: 4em;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2em;
 }
 
 
