@@ -518,9 +518,7 @@ h1{
         width: 3vw;
         height: 3vw;
     }
-    .active{
-        filter: blur(8vw);  
-    }
+  
     .container1{
         top:74vw;
         height:30vw;
@@ -563,7 +561,7 @@ h1{
         margin-left: 14.2vw;    
     }  
     #MOC{
-        top: 16vw;
+        top: 14vw;
         left: 50%;
         padding-right: 7vw;
         margin-left: -2.2vw;
