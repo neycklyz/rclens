@@ -6,6 +6,7 @@
   --second-color:#edcf65;
   --third-color: #616161;
   --fourth-color:#89ce94;
+  --fifth-color: #222222;
 }
 
 *{
@@ -41,8 +42,8 @@ body{
 /*/////////////////////////////////////////////////*/
 
 .bgcolor{
-  transition: ease-in-out 0.2s;
-  background-color: var(--main-color);
+  transition: ease-in-out 0.7s;
+  background-color: var(--fifth-color);
 }
 
 .navbar{
@@ -118,7 +119,7 @@ body{
 
 #edrlogo{
   width: 8rem;
-  filter: invert(100%) sepia(89%) saturate(1200%) hue-rotate(-10deg) brightness(90%) contrast(90%);
+  filter: invert(96%) sepia(97%) saturate(816%) hue-rotate(325deg) brightness(96%) contrast(94%);
 }
 
 #officiel{
@@ -129,7 +130,7 @@ body{
 }
 
 #officiel img{
-  filter: invert(100%) sepia(89%) saturate(1200%) hue-rotate(-10deg) brightness(90%) contrast(90%);
+  filter: invert(96%) sepia(97%) saturate(816%) hue-rotate(325deg) brightness(96%) contrast(94%);
 }
 
 
@@ -430,7 +431,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--main-color);
+  background-color: var(--fifth-color);
   height: 8rem;
   padding: 2em;
 }
@@ -492,8 +493,9 @@ footer p{
   }
   #text-accueil-mobile{
     display: flex;
-    width: 80vw;
-    font-size: calc(1rem + 5vh);
+    text-transform: uppercase;
+    max-width: 80vw;
+    font-size: calc(1rem + 3vh);
   }
   header{
     height: 100vh;

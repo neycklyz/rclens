@@ -33,10 +33,11 @@ mysqli_close($conn); // close connection
     <meta charset="UTF-8">
     <script src="script.js" defer></script>
     <script src="DragDropTouch.js"></script>
+    <script src="html2canvas.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Drag and drop</title>
 </head>
-<body>
+<body id="body">
 <h1>RC LENS LEGENDS</h1>
 <img src="img/blason.svg" alt="blason" id="blason"> 
 <div><img src="img/terrain.svg" alt="terrain" id="terrain"></div>
