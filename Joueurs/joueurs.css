@@ -13,8 +13,9 @@
     list-style: none;
 }
 
+
 body{
-    background-color: black;
+    background-color: var(--main-color);
     font-family: myFonts;
     height: 100%;
     background-size: 100vw;
@@ -121,7 +122,7 @@ body{
     
 }
 
-@media screen and (max-width:830px){
+@media screen and (max-width:1400px){
     .nom{
         font-size: 11vw;
         display:flex;
@@ -148,7 +149,7 @@ body{
 }
 
 
-@media screen and (max-device-width:830px){
+@media screen and (max-device-width:1400px){
     .nom{
         font-size: 11vw;
         display:flex;
