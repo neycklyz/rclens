@@ -20,11 +20,11 @@
     <body id = "body-accueil">
 
         <nav class="navbar" id = "nav-accueil">
-            <a href = "index.html" id="edr">
+            <a href = "index.php" id="edr">
             <img src="CSS/edr.png" id="edrlogo" alt="logo"></a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.php">Accueil</a></li>
                         <li><a href="effectif.php">Effectif</a></li>
                         <li><a href="JS Drag and drop - V2 Terrain/index.php">XI de Légendes</a></li>
                         <li><a href="quiz.php">Quiz</a></li>
@@ -92,6 +92,9 @@
         menuHamburger.addEventListener('click',()=>{
         navLinks.classList.toggle('mobile-menu')
         })
+        window.onload = function() {
+        document.location.hash = "";
+    }
     </script>
     
 </html>

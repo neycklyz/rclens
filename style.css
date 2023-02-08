@@ -419,6 +419,9 @@ header div img::before{
   .titre{
     display: none;
   }
+  header div img{
+    display: none;
+  }
   .portfolio{
     flex-direction: column;
   }
@@ -604,7 +607,7 @@ footer p{
 /*///////////////////////////////////////////////////////*/
 
 .tab{
-  max-width: 70vw;
+  max-width: 950px;
   text-align: center;
   margin-top: 25px;
   margin: 0 auto;
@@ -613,7 +616,6 @@ footer p{
 }
 
 #gardiens, #defenseurs, #milieux, #attaquants{
-  text-align: center;
   width: 70%;
   margin-top: 25px;
   margin: 0 auto;
@@ -644,10 +646,8 @@ footer p{
 .role{
   text-transform: uppercase;
   color: var(--second-color);
-  margin-inline: auto;  
   font-size: 35px;
   padding: 1.3em;
-  text-align: center;
 }
 
 /* MEDIA QUERY EFFECTIF */
