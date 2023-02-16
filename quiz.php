@@ -6,7 +6,7 @@ session_start();
 
 include("effectifHelper.php");
 
-error_reporting(E_ALL); // check all errors
+// error_reporting(E_ALL); // check all errors
 ini_set('display_errors',1); // display errors
 $conn = mysqli_connect('localhost','root','','effectif');//database connection code
 
@@ -77,7 +77,7 @@ $quiz_data = $num;
 		<h1>Connais-tu <span style="text-transform: uppercase;">vraiment</span> le Racing ?</h1>
 
             <?php
-
+            error_reporting(E_ALL ^ E_NOTICE);
             $tab = [];
             $count = 1;
             foreach($quiz_data as $q){

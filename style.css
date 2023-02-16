@@ -57,6 +57,7 @@ body{
   align-items: center;
   padding: 1em;
   z-index: 1;
+  transition: 0.4s;
 }
 
 @keyframes gradient {
@@ -331,7 +332,6 @@ header a{
 #text-accueil-mobile{
   display:none;
   font-size: 10vw;
-  position: absolute;
   background: -webkit-linear-gradient(0.4turn, var(--second-color), var(--fourth-color));
   -webkit-background-clip: text;
   background-clip: text;
@@ -619,7 +619,7 @@ footer p{
 }
 
 #gardiens, #defenseurs, #milieux, #attaquants{
-  width: 70%;
+  width: 30rem;
   margin-top: 25px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -658,6 +658,7 @@ footer p{
 @media screen and (max-width:800px){
   #gardiens, #defenseurs, #milieux, #attaquants{
     justify-content: space-around;
+    width: 15rem;
   }
   .tab{
     max-width: 100%;
