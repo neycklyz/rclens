@@ -52,15 +52,19 @@
 
         <section id="presentation">
             <h1>Présentation du projet</h1>
-            <p id="explication">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti qui corporis ipsum voluptatibus dolore architecto accusantium eligendi! 
-            Dignissimos cupiditate earum nemo...</p>
+            <p id="explication">&Eacutetudiant de 18 ans, j'ai décidé de développer mon projet "Enfants Du Racing" pour mobiliser l'ensemble des compétences
+                acquises dans les domaines qui me passionnent. 
+            </p>
             <div class="portfolio">
-                <div class="categorie"><img src="CSS/dev.svg" id="dev"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam eaque, natus quaerat officiis eius, ratione voluptatem sapiente voluptates iure illo aliquam dolore veritatis
-                    repudiandae ex...</p></div>
-                <div class="categorie"><img src="CSS/categorie.svg"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et labore necessitatibus tempora repellat eius! Dolore sunt consectetur, consequuntur modi quis facere delectus officia
-                    perspiciatis rerum harum ullam blanditiis voluptas pariatur.</p></div>
-                <div class="categorie"><img src="CSS/categorie.svg"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque adipisci sed, dolorem consequatur tempora est hic debitis, dicta in laborum fugit voluptatum facilis
-                    ipsam...</p></div>
+                <div class="categorie"><img src="CSS/dev.svg" id="dev"><p>J'ai découvert le domaine du web à l'occasion de ma première année d'études. C'est ma source
+                    de motivation pour ce projet et la principale compétence développée à travers EDR.
+                </p></div>
+                <div class="categorie"><img src="CSS/graphisme.svg"><p>Passionné par l'infographie depuis maintenant 3 ans, j'ai développé cette compétence à travers
+                    un apprentissage autodidacte. J'ai notamment utilisé Photoshop et Illustrator pour la partie graphique du projet.
+                </p></div>
+                <div class="categorie"><img src="CSS/blason.svg" id="blason"><p>Grand supporter du Racing depuis l'enfance, j'ai décidé d'articuler mon projet autour
+                    du club à travers plusieurs pages que vous pouvez dès à présent visiter en naviguant sur EDR.
+                </p></div>
             </div>
         </section>
 

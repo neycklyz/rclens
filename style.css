@@ -56,7 +56,13 @@ body{
   box-sizing: border-box;
   align-items: center;
   padding: 1em;
+  transition: 0.4s;
   z-index: 1;
+}
+
+.navbar:hover{
+  transition: ease-in-out 0.7s;
+  background-color: var(--fifth-color);
 }
 
 @keyframes gradient {
@@ -295,7 +301,7 @@ header a{
   font-size: 4vw;
   margin-top: -7vw;
   color: var(--second-color);
-  text-shadow: 0 0 0.3em #edcf6594, 0 0 0.3em black;
+  text-shadow: 0 0 0.3em rgba(237, 207, 101, 0.535), 0 0 0.3em black;
   position: relative;
   transition: 0.3s;
 }
@@ -350,7 +356,7 @@ header div img{
   position: absolute;
   margin-top: calc(-7vw - 1rem);
   z-index: -1;
-  filter: invert(96%) sepia(97%) saturate(816%) hue-rotate(325deg) brightness(96%) contrast(94%) blur(0.02rem) drop-shadow(0px 0px 5px #edcf656e);
+  filter: invert(96%) sepia(97%) saturate(816%) hue-rotate(325deg) brightness(96%) contrast(94%) blur(0.02rem) drop-shadow(0px 0px 15px rgba(237, 207, 101, 0.553));
   width: 20vw;
 }
 
@@ -399,11 +405,15 @@ header div img::before{
 
 .categorie{
   background-color: var(--second-color);
-  max-width: 300px;
+  width: 33%;
   padding: 2rem;
   margin: 3rem;
   border-radius: 2rem;
   text-align: center;
+}
+
+.categorie > #blason{
+  width: 3.2rem;
 }
 
 .categorie p{
