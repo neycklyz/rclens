@@ -669,6 +669,7 @@ footer p{
 @media screen and (max-width:800px){
   #gardiens, #defenseurs, #milieux, #attaquants{
     justify-content: space-around;
+    min-width: 350px;
   }
   .tab{
     max-width: 100%;
